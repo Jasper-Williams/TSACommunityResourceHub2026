@@ -1,0 +1,348 @@
+
+/* Reset and basic styles */
+body {
+    margin:5px;
+    font-family: sans-serif;
+    background-color:#f1f1f1;
+    background-color: #F5F7FA;
+    background-image: radial-gradient(rgba(10, 37, 64, 0.02) 1px, transparent 1);
+    background-size: 40px 40px;
+    color: #0A2540;
+}
+
+#restaurantSearch {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 16px;
+  margin: 10px 0 20px;
+  box-sizing: border-box;
+}
+
+.div1 hr {
+  border: 0;
+  height: 2px;
+  background-color: white;
+}
+
+
+/* Background Video */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Text Colors */
+.white {
+    color: white;
+}
+.black{
+    color:black;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Divs */
+.div1 {
+    position: sticky;
+    top: 0;
+    background: linear-gradient(180deg, #519ade 0%, #245bbf 99%);
+    color: white;
+    padding: 28px 20px;
+    z-index: 1000;
+    border: 5px solid white;
+}
+
+.div2, .div3{
+    position: relative;  /* ensures content is above video */
+    z-index: 1;
+    text-align: center;
+    background-color: #ededed;
+    border-radius: 18px;
+    padding: 20px;
+    margin: 18px;
+    max-width:40%;
+    opacity: 1.00
+}
+
+.div3{
+    border:10px 10px 10px 10px;
+}
+
+.div4{
+    position: relative;  /* ensures content is above video */
+    z-index: 1;
+    text-align: center;
+    border-radius: 18px;
+    padding: 20px;
+    margin: 18px;
+    max-width:40%;
+    color:white;
+    background-color: #ededed;
+    opacity: 1.00
+}
+
+.aboutUsDiv{
+    border-radius: 18px;
+    padding: 20px;
+    margin: 18px;
+    background-color: #ededed;
+    opacity: 1.00
+}
+
+.TSALogoDiv{
+    float:right;
+    margin:10px;
+    border-radius: 20px;
+    opacity: 1.00
+}
+
+.foodDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ededed;
+    opacity: 1.00;
+    border-radius: 18px;
+    padding: 20px;
+    margin: 80px;
+}
+/* Links */
+a {
+    color: #519ade;
+    text-decoration: none;
+}
+a:hover {
+    color: #519ade;
+}
+a:visited {
+    color: #519ade;
+}
+
+.header-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-link:hover {
+  cursor: pointer;
+}
+
+
+/* Inputs and select */
+#searchInput {
+    text-align: center;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+select {
+    text-align: center;
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #e6e9ef;
+    font-size: 0.9rem;
+    background: white;
+}
+
+/* Images */
+#bigSpring, #midCityImg, #spaceRocketImg, #meltImg, #banditoImg, #countryKImg, #PhatImg, #PoppyImg, #CommerceImg, #StandardSocialImg, #PurveyorImg, #CottonImg, #DomainImg {
+    width: 300px;  
+    height: auto;
+    border-radius: 25px;
+    border: 3px solid black;
+    margin-bottom: 15px;
+}
+
+/* Links under images */
+#bigSpringLink, #midCity, #spacerocketLink {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#meltImg{
+    margin-top:10px;
+}
+
+/* Accent Colors for Divs. Make each category div a different color once they're all created. Example: Food red, Attraction yellow... */
+.foodDiv {
+  border-left: 6px solid #FF6B6B;
+}
+
+.div2, .div3, .div4, .div5, .div6 {
+  border-left: 6px solid #4ECDC4;
+}
+.div5 {
+  border-left: 6px solid #95E1D3;
+}
+
+.div6 {
+  border-left: 6px solid #F38181;
+}
+
+
+
+.dropdown {
+  position: relative;
+  text-align: center;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+  font-family:'Inter', sans-serif;
+  font-weight:600;
+  background-color: #FFFFFF;
+  color: #0A2540;
+  padding: 16px 20px;
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  font-family:'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 16px 20px
+  color: #0A2540;
+  border-radius: 15px;
+  cursor: pointer;
+  display: inline-block
+  text-align: center;
+  position: absolute;
+  background-color: #FFFFFF;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside dropdown content */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #e6eef7;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+#dropdownTable {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dropdownTable{
+  border-collapse: separate;
+  border-spacing: 20px; /* horizontal & vertical */
+}
+
+.TSALogoDiv{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  opacity: 0;
+  transform: translateY(-10px) scale(0.98);
+  pointer-events: none;
+
+  background-color: #f9f9f9;
+  min-width: 220px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+/*Dropdown menu spoofing up. Lots of goofy CSS. Understandable once you mess with it a little bit. Purely for looks and for fun */
+
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+
+.dropdown-content img {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.dropdown-content a:hover img {
+  transform: scale(1.025);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+
+.dropbtn {
+  transition:
+    background-color 0.1s ease,
+    transform 0.20s ease;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #e6eef7;
+  transform: translateY(-5px);
+}
+
+
+.dropdown-content a {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.45s ease;
+}
+
+.dropdown:hover .dropdown-content a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-content a:nth-child(1) { transition-delay: 0.10s; }
+.dropdown-content a:nth-child(2) { transition-delay: 0.20s; }
+.dropdown-content a:nth-child(3) { transition-delay: 0.30s; }
+.dropdown-content a:nth-child(4) { transition-delay: 0.40s; }
+.dropdown-content a:nth-child(5) { transition-delay: 0.50s; }
+
+
