@@ -8,7 +8,6 @@
 
 <body>
     <!-- Background Video. Opted out for now until further discussion. -->
-
     <!-- Header -->
     <a href="index.html" class="header-link">
             <div class="div1">
@@ -42,10 +41,10 @@
                     <div class="dropdown">
                         <button class="dropbtn">Spotlight Section</button>
                             <div class="dropdown-content">
-                                <a href="https://www.huntsville.org/listing/big-spring-international-park/862/"><img id = "bigSpring" src="https://codehs.com/uploads/04255180258db0581aff504dc6f00d55" alt="Big Spring Park">
+                                <a href="https://www.huntsville.org/listing/big-spring-international-park/862/">
                                 <br>Big Spring Park</a>
-                                <a href="https://www.midcitydistrict.com"><img id = "midCityImg" src="https://codehs.com/uploads/a42e5ecdc3ba9a8a21fa7f703e474765" alt="Mid City"><br>Mid City</a>
-                                <a href="https://www.rocketcenter.com"><img id = "spaceRocketImg" src="https://codehs.com/uploads/3150e230c8b4fb04d34645ec96948a08" alt="Space and Rocket Center"><br>Space and Rocket Center</a>
+                                <a href="https://www.midcitydistrict.com"><br>Mid City District</a>
+                                <a href="https://www.rocketcenter.com"><br>Space and Rocket Center</a>
                         </div>
                     </div>
                 </th>
@@ -74,12 +73,73 @@
         
     </div>
     
+    <div id = "spaceDiv">
+        
+    </div>
+    
+    <div class="formDiv">
+        <h3>Add a Resource</h3>
+        <p>If we missed a resource, submit it below and we'll review it.</p>
+
+        <form id="resourceForm">
+
+            <label for="resName">Resource Name</label>
+            <input type="text" id="resName" required>
+
+            <label for="resURL">Website</label>
+            <input type="url" id="resURL" placeholder="https://example.org" required>
+
+            <label for="resCategory">Category *</label>
+            <select id="resCategory" required>
+                <option value="">Choose a category</option>
+                <option>Food</option>
+                <option>Attraction</option>
+                <option>Family</option>
+                <option>Entertainment</option>
+                <option>Wellness</option>
+            </select>
+
+            <label for="resDesc">Short Description</label>
+            <textarea id="resDesc" placeholder="What the resource provides" required></textarea>
+
+            <label for="resTags">Tags (Seperate with commas)</label>
+            <input type="text" id="resTags" placeholder="cheap, proffessional, fun for kids" required>
+
+            <button type="submit">Submit Resource</button>
+
+            <div class="note">
+                These submissions are reviewed carefully before being put into the Huntsville Community Resource Hub
+            </div>
+
+        </form>
+    </div>
+    
     <!--TSA Logo Section -->
     
     <div class = "TSALogoDiv">
         <a href = "https://tsaweb.org"><img src = "https://tsaweb.org/ResourcePackages/Bootstrap5/assets/dist/img/TSA_logo.png" alt = "TSA Image"></a>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
