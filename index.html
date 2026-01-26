@@ -1,96 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Huntsville Community Resource Hub</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Background Video. Opted out for now until further discussion. -->
-    <!-- Header -->
+
+    <!-- HEADER -->
     <a href="index.html" class="header-link">
-            <div class="div1">
-            <h2 class="center white">Huntsville Community Resource Hub</h2>
+        <header class="div1">
+            <h1 id="bigHeader">Huntsville Community Resource Hub</h1>
             <hr>
-                <p class="center white">
-          This is a Resource Website built to highlight resources available to the community. Huntsville, Alabama is a dynamic city built on innovation, opportunity, and a bold vision for what's next.
-                </p>
-            </div>
-        </a>
+            <p class = "white">
+                A community-built guide highlighting food, wellness, entertainment,
+                and family-friendly resources across Huntsville, Alabama.
+            </p>
+        </header>
+    </a>
 
-    <!-- Category Section -->
-    
-    <div class = "dropdownDiv">
-        <table id = "dropdownTable">
-            <tr>
-               <th>
-               <div class="dropdown">
+    <!-- NAVIGATION -->
+    <div class="dropdownDiv">
+        <div class="navBar">
+            <div class="dropdown">
                 <button class="dropbtn">Categories</button>
-                    <div class="dropdown-content">
-                        <a href="Food.html">Food</a>
-                        <a href="Attraction.html">Attraction</a>
-                        <a href="Entertainment.html">Entertainment</a>
-                        <a href="Wellness.html">Wellness</a>
-                        <a href="Family.html">Family</a>
-                    </div>
+                <div class="dropdown-content">
+                    <a href="Food.html">Food</a>
+                    <a href="Attraction.html">Attraction</a>
+                    <a href="Entertainment.html">Entertainment</a>
+                    <a href="Wellness.html">Wellness</a>
+                    <a href="Family.html">Family</a>
                 </div>
-                </th>
-                 <!-- Spotlight Section -->
-                <th>
-                    <div class="dropdown">
-                        <button class="dropbtn">Spotlight Section</button>
-                            <div class="dropdown-content">
-                                <a href="https://www.huntsville.org/listing/big-spring-international-park/862/">
-                                <br>Big Spring Park</a>
-                                <a href="https://www.midcitydistrict.com"><br>Mid City District</a>
-                                <a href="https://www.rocketcenter.com"><br>Space and Rocket Center</a>
-                        </div>
-                    </div>
-                </th>
-               <th>
-                <!--About Us Section -->
-               <div class = "dropdown">
-                   <button class = "dropbtn">About Us</button>
-                        <div class = "dropdown-content">
-                            <a href = "AboutUs.html">About the Developers</a>
-                        </div>
-               </div>
-               
-               
-               </th>
-               <!-- References Section -->
-               <th><div class = "dropdown">
-                   <button class = "dropbtn">References</button>
-                        <div class = "dropdown-content">
-                            <a href = "References.html">References Page</a>
-                        </div>
-               </div></th>
-               
-            </tr>
-        </table>
-        
-        
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Spotlight</button>
+                <div class="dropdown-content">
+                    <a href="https://www.huntsville.org/listing/big-spring-international-park/862/">Big Spring Park</a>
+                    <a href="https://www.midcitydistrict.com">MidCity District</a>
+                    <a href="https://www.rocketcenter.com">Space & Rocket Center</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">About</button>
+                <div class="dropdown-content">
+                    <a href="AboutUs.html">About the Developers</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">References</button>
+                <div class="dropdown-content">
+                    <a href="References.html">References Page</a>
+                </div>
+            </div>
+        </div>
     </div>
-    
-    <div id = "spaceDiv">
-        
+    <br><br>
+
+    <!-- FEATURES -->
+<section class="featureDivsWrapper">
+    <div class="featureDivs">
+        <div class="feature" id="feature1">
+            <h3>Explore Resources</h3>
+            <p>Browse trusted local organizations and services by category.</p>
+        </div>
+        <div class="feature" id="feature2">
+            <h3>Discover Huntsville</h3>
+            <p>Find attractions, events, and spaces that define the city.</p>
+        </div>
+        <div class="feature" id="feature3">
+            <h3>Community Powered</h3>
+            <p>Submit resources and help keep the hub accurate and useful.</p>
+        </div>
+        <div class="feature" id="feature4">
+            <h3>Stay Informed</h3>
+            <p>Get updates on local events, new openings, and community news.</p>
+        </div>
+        <div class="feature" id="feature5">
+            <h3>Support Local</h3>
+            <p>Highlight small businesses and initiatives that make Huntsville unique.</p>
+        </div>
+        <div class="feature" id="feature6">
+            <h3>Plan Your Visit</h3>
+            <p>Find family-friendly activities, parks, and entertainment options all in one place.</p>
+        </div>
     </div>
-    
-    <div class="formDiv">
+</section>
+
+
+
+
+    <!-- FORM -->
+    <section class="formDiv">
         <h3>Add a Resource</h3>
-        <p>If we missed a resource, submit it below and we'll review it.</p>
+        <p>If we missed a resource, submit it below for review.</p>
 
-        <form id="resourceForm">
+        <form>
+            <label>Resource Name</label>
+            <input type="text" required>
 
-            <label for="resName">Resource Name</label>
-            <input type="text" id="resName" required>
+            <label>Website</label>
+            <input type="url" placeholder="https://example.org" required>
 
-            <label for="resURL">Website</label>
-            <input type="url" id="resURL" placeholder="https://example.org" required>
-
-            <label for="resCategory">Category *</label>
-            <select id="resCategory" required>
+            <label>Category</label>
+            <select required>
                 <option value="">Choose a category</option>
                 <option>Food</option>
                 <option>Attraction</option>
@@ -99,47 +116,26 @@
                 <option>Wellness</option>
             </select>
 
-            <label for="resDesc">Short Description</label>
-            <textarea id="resDesc" placeholder="What the resource provides" required></textarea>
+            <label>Description</label>
+            <textarea required></textarea>
 
-            <label for="resTags">Tags (Seperate with commas)</label>
-            <input type="text" id="resTags" placeholder="cheap, proffessional, fun for kids" required>
+            <label>Tags</label>
+            <input type="text" placeholder="affordable, family-friendly">
 
             <button type="submit">Submit Resource</button>
 
             <div class="note">
-                These submissions are reviewed carefully before being put into the Huntsville Community Resource Hub
+                Submissions are reviewed before being added to the hub.
             </div>
-
         </form>
+    </section>
+
+    <!-- TSA LOGO -->
+    <div class="TSALogoDiv">
+        <a href="https://tsaweb.org">
+            <img src="https://tsaweb.org/ResourcePackages/Bootstrap5/assets/dist/img/TSA_logo.png" alt="TSA Logo">
+        </a>
     </div>
-    
-    <!--TSA Logo Section -->
-    
-    <div class = "TSALogoDiv">
-        <a href = "https://tsaweb.org"><img src = "https://tsaweb.org/ResourcePackages/Bootstrap5/assets/dist/img/TSA_logo.png" alt = "TSA Image"></a>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script src="script.js"></script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
