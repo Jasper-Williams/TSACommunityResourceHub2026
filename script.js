@@ -1,75 +1,63 @@
 console.log("Welcome to the Huntsville Community Resource Hub!");
 
+// -------------------- SEARCH FUNCTION --------------------
 document.addEventListener("DOMContentLoaded", function () {
+    const searchInputs = document.querySelectorAll(".search-input");
 
-    const searchInput = document.querySelector(".search-input");
-    const items = document.querySelectorAll(".search-item");
+    searchInputs.forEach(input => {
+        const items = input.parentElement.querySelectorAll(".search-item");
+        if (!items.length) return;
 
-    if (!searchInput || items.length === 0) return;
+        input.addEventListener("input", function () {
+            const searchValue = input.value.toLowerCase().trim();
 
-    searchInput.addEventListener("input", function () {
-        const searchValue = searchInput.value.toLowerCase().trim();
-
-        items.forEach(item => {
-            const itemText = item.textContent.toLowerCase();
-
-            if (searchValue === "" || itemText.includes(searchValue)) {
-                item.style.display = "";
-            } else {
-                item.style.display = "none";
-            }
+            items.forEach(item => {
+                const itemText = item.textContent.toLowerCase();
+                item.style.display = searchValue === "" || itemText.includes(searchValue)
+                    ? ""
+                    : "none";
+            });
         });
     });
-
 });
 
-
-
-
-//end of search tool
-
-
-
-
-if (searchInput) {
-    searchInput.addEventListener('input', handleSearchInput);
+// -------------------- EMAILJS FORM --------------------
+if (typeof emailjs !== "undefined") {
+    emailjs.init("3WSDRDWGSC7KAdTJ-"); // public key
 }
 
-// EmailJS Form Submission
-emailjs.init("3WSDRDWGSC7KAdTJ-"); //public key
+const form = document.getElementById("resourceForm");
 
-let form = document.getElementById("resourceForm");
+if (form) {
+    form.onsubmit = function (event) {
+        event.preventDefault();
 
-form.onsubmit = function(event) {
-    event.preventDefault(); // Preventing page reload
+        const name = document.getElementById("resName")?.value || "";
+        const email = document.getElementById("resEmail")?.value || "N/A";
+        const resourceURL = document.getElementById("resURL")?.value || "";
+        const category = document.getElementById("resCategory")?.value || "";
+        const description = document.getElementById("resDesc")?.value || "";
+        const tags = document.getElementById("resTags")?.value || "";
+        const time = new Date().toLocaleString();
 
-    // Gather form values
-    let name = document.getElementById("resName").value;
-    let email = document.getElementById("resEmail") ? document.getElementById("resEmail").value : "N/A";
-    let resourceName = name; // Same as name
-    let resourceURL = document.getElementById("resURL").value;
-    let category = document.getElementById("resCategory").value;
-    let description = document.getElementById("resDesc").value;
-    let tags = document.getElementById("resTags").value;
-    let time = new Date().toLocaleString();
+        emailjs.send("service_t0kzfg6", "template_zvs2t1u", {
+            name,
+            email,
+            time,
+            resource_name: name,
+            resource_url: resourceURL,
+            category,
+            description,
+            tags
+        })
+        .then(() => {
+            alert("Resource submitted successfully!");
+            form.reset();
+        })
+        .catch((error) => {
+            console.error(error);
+            alert("Something went wrong. Please try again.");
+        });
+    };
+}
 
-    // EmailJS part
-    emailjs.send("service_t0kzfg6", "template_zvs2t1u",{//these are id'
-        name: name,
-        email: email,
-        time: time,
-        resource_name: resourceName,
-        resource_url: resourceURL,
-        category: category,
-        description: description,
-        tags: tags
-    })
-    .then(function() {
-        alert("Resource submitted successfully!");
-        form.reset();
-    })
-    .catch(function(error) {
-        console.log(error);
-        alert("Something went wrong. Please try again.");
-    });
-};
