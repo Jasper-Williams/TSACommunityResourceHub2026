@@ -1,75 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Attractions</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-
-        <a href="index.html" class="header-link">
-            <div class="div1">
-                <h2 class="center white">Huntsville Community Resource Hub</h2>
-                <hr>
-                <p class="center white">
-                    This is a Resource Website built to highlight resources available to the community.
-                    Huntsville, Alabama is a dynamic city built on innovation, opportunity, and a bold
-                    vision for what's next.
-                </p>
-            </div>
-        </a>
-        
-        <div class="attractDiv">
-            <h2>Attractions</h2>
-            <hr class="black">
-
-            <input
-              type="text"
-              class="search-input"
-              placeholder="Search attractions by name or keyword here:"
-            >
-
-            <div class="search-item">
-                <p><a href="https://www.rocketcenter.com/">U.S. Space & Rocket Center</a> — Inspiring, Educational, All Ages</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.huntsville.org/listing/big-spring-international-park/862/">Big Spring International Park</a> — Open, Scenic, Community Gathering</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.alapark.com/parks/monte-sano-state-park">Monte Sano State Park</a> — Nature, Accessible Trails, Peaceful</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://hsvbg.org/">Huntsville Botanical Garden</a> — Seasonal, Relaxing, Family-Friendly</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://lowemill.art/">Lowe Mill ARTS & Entertainment</a> — Creative, Inclusive, Local Community</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://burrittonthemountain.com/">Burritt on the Mountain</a> — History, Culture, All Ages</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.huntsville.org/listing/john-hunt-park/765/">John Hunt Park</a> — Open Space, Sports, Community-Friendly</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://landtrustnal.org/explore-our-lands/preserves-north-alabama/">Land Trust Nature Preserves</a> — Trails, Calm, Inclusive Outdoors</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://weedenhousemuseum.com/">Weeden House Museum</a> — Historic, Welcoming, Educational</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.downtownhuntsville.org/">Downtown Huntsville Square</a> — Walkable, Events, Community Hub</p>
+<head>
+    <title>Attractions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- DROPDOWN NAV -->
+    <div class="dropdownDiv">
+        <div class="dropdown">
+            <button class="dropbtn">Resources</button>
+            <div class="dropdown-content">
+                <a href="Food.html">Food</a>
+                <a href="Attraction.html">Attraction</a>
+                <a href="Entertainment.html">Entertainment</a>
+                <a href="Wellness.html">Wellness</a>
+                <a href="Family.html">Family</a>
             </div>
         </div>
 
-        <script src="script.js"></script>
-    </body>
+        <div class="dropdown">
+            <button class="dropbtn">Community Spotlight</button>
+            <div class="dropdown-content">
+                <a href="https://www.huntsville.org/listing/big-spring-international-park/862/">Big Spring Park</a>
+                <a href="https://www.midcitydistrict.com">MidCity District</a>
+                <a href="https://www.rocketcenter.com">Space & Rocket Center</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+                <a href="AboutUs.html">About the Developers</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">References</button>
+            <div class="dropdown-content">
+                <a href="References.html">References Page</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER LINK -->
+    <a href="index.html">
+        <section class="resource-header">
+            <h1 id="bigHeader">Huntsville Community Resource Hub</h1>
+            <hr>
+            <p class="insideP">
+                A community-built guide highlighting food, wellness, entertainment,
+                and family-friendly resources across Huntsville, Alabama.
+            </p>
+        </section>
+    </a>
+
+    <!-- ATTRACTIONS RESOURCES -->
+    <div class="resourceDiv" style="border-left-color: #e67e22;">
+        <h2>Attractions</h2>
+        <hr class="black">
+
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search attractions by name or keyword here:"
+          style="width: 100%; padding: 10px; margin: 15px 0; border-radius: 6px; border: 1px solid #ccc;"
+        >
+
+        <div class="list-item">
+            <p><a href="https://www.rocketcenter.com/">U.S. Space & Rocket Center</a> — Inspiring, Educational, All Ages</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.huntsville.org/listing/big-spring-international-park/862/">Big Spring International Park</a> — Open, Scenic, Community Gathering</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.alapark.com/parks/monte-sano-state-park">Monte Sano State Park</a> — Nature, Accessible Trails, Peaceful</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://hsvbg.org/">Huntsville Botanical Garden</a> — Seasonal, Relaxing, Family-Friendly</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://lowemill.art/">Lowe Mill ARTS & Entertainment</a> — Creative, Inclusive, Local Community</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://burrittonthemountain.com/">Burritt on the Mountain</a> — History, Culture, All Ages</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.huntsville.org/listing/john-hunt-park/765/">John Hunt Park</a> — Open Space, Sports, Community-Friendly</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://landtrustnal.org/explore-our-lands/preserves-north-alabama/">Land Trust Nature Preserves</a> — Trails, Calm, Inclusive Outdoors</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://weedenhousemuseum.com/">Weeden House Museum</a> — Historic, Welcoming, Educational</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.downtownhuntsville.org/">Downtown Huntsville Square</a> — Walkable, Events, Community Hub</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
