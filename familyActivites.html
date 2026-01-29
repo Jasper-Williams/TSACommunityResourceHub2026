@@ -1,71 +1,99 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Family Activites</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-
-        <a href="index.html" class="header-link">
-            <div class="div1">
-                <h2 class="center white">Huntsville Community Resource Hub</h2>
-                <hr>
-                <p class="center white">
-                    This is a Resource Website built to highlight resources available to the community.
-                    Huntsville, Alabama is a dynamic city built on innovation, opportunity, and a bold
-                    vision for what's next.
-                </p>
-            </div>
-        </a>
-        
-        <div class="familyDiv">
-            <h2>Family Fun</h2>
-            <hr class="black">
-
-            <input
-              type="text"
-              class="search-input"
-              placeholder="Search family activities by name or keyword here:"
-            >
-
-            <div class="search-item">
-                <p><a href="https://pointmallardpark.com/">Point Mallard Park</a> — Waterpark, Outdoor, Family-Friendly</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://earlyworks.com/earlyworks-childrens-museum/">EarlyWorks Children's Museum</a> — Learning, Hands-On, Welcoming</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://hmcpl.org/">Huntsville–Madison County Public Library</a> — Programs, Events, Family</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://hsvmuseum.org/">Huntsville Museum of Art</a> — Creative, Educational, All Ages</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.urbanair.com/alabama-huntsville/">Urban Air Adventure Park</a> — Energy, Indoor, Family Fun</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.rollertime.com/">Roller Time</a> — Active, Indoor, All Ages</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.huntsville.org/listing/sharon-johnston-park/74/">Sharon Johnston Park</a> — Playground, Outdoor, Family</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.cookmuseum.org/">Cook Museum of Natural Science</a> — Discovery, Kids, Educational</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.huntsville.org/listing/dublin-memorial-park/1681/">Dublin Park</a> — Splash Pad, Recreation, Family</p>
+<head>
+    <title>Family</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- DROPDOWN NAV -->
+    <div class="dropdownDiv">
+        <div class="dropdown">
+            <button class="dropbtn">Resources</button>
+            <div class="dropdown-content">
+                <a href="Food.html">Food</a>
+                <a href="Attraction.html">Attraction</a>
+                <a href="Entertainment.html">Entertainment</a>
+                <a href="Wellness.html">Wellness</a>
+                <a href="Family.html">Family</a>
             </div>
         </div>
 
-        <script src="script.js"></script>
-    </body>
+        <div class="dropdown">
+            <button class="dropbtn">Community Spotlight</button>
+            <div class="dropdown-content">
+                <a href="https://www.huntsville.org/listing/big-spring-international-park/862/">Big Spring Park</a>
+                <a href="https://www.midcitydistrict.com">MidCity District</a>
+                <a href="https://www.rocketcenter.com">Space & Rocket Center</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+                <a href="AboutUs.html">About the Developers</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">References</button>
+            <div class="dropdown-content">
+                <a href="References.html">References Page</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER LINK -->
+    <a href="index.html">
+        <section class="resource-header">
+            <h1 id="bigHeader">Huntsville Community Resource Hub</h1>
+            <hr>
+            <p class="insideP">
+                A community-built guide highlighting food, wellness, entertainment,
+                and family-friendly resources across Huntsville, Alabama.
+            </p>
+        </section>
+    </a>
+
+    <!-- FAMILY RESOURCES -->
+    <div class="resourceDiv" style="border-left-color: #2ca02c;">
+        <h2>Family Fun</h2>
+        <hr class="black">
+
+        <div class="list-item">
+            <p><a href="https://pointmallardpark.com/">Point Mallard Park</a> — Waterpark, Outdoor, Family-Friendly</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://earlyworks.com/earlyworks-childrens-museum/">EarlyWorks Children's Museum</a> — Learning, Hands-On, Welcoming</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://hmcpl.org/">Huntsville–Madison County Public Library</a> — Programs, Events, Family</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://hsvmuseum.org/">Huntsville Museum of Art</a> — Creative, Educational, All Ages</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.urbanair.com/alabama-huntsville/">Urban Air Adventure Park</a> — Energy, Indoor, Family Fun</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.rollertime.com/">Roller Time</a> — Active, Indoor, All Ages</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.huntsville.org/listing/sharon-johnston-park/74/">Sharon Johnston Park</a> — Playground, Outdoor, Family</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.cookmuseum.org/">Cook Museum of Natural Science</a> — Discovery, Kids, Educational</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.huntsville.org/listing/dublin-memorial-park/1681/">Dublin Park</a> — Splash Pad, Recreation, Family</p>
+        </div>
+    </div>
+</body>
 </html>
