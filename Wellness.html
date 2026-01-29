@@ -1,75 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Wellness</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-
-        <a href="index.html" class="header-link">
-            <div class="div1">
-                <h2 class="center white">Huntsville Community Resource Hub</h2>
-                <hr>
-                <p class="center white">
-                    This is a Resource Website built to highlight resources available to the community.
-                    Huntsville, Alabama is a dynamic city built on innovation, opportunity, and a bold
-                    vision for what's next.
-                </p>
+<head>
+    <title>Wellness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- DROPDOWN NAV -->
+    <div class="dropdownDiv">
+        <div class="dropdown">
+            <button class="dropbtn">Resources</button>
+            <div class="dropdown-content">
+                <a href="Food.html">Food</a>
+                <a href="Attraction.html">Attraction</a>
+                <a href="Entertainment.html">Entertainment</a>
+                <a href="Wellness.html">Wellness</a>
+                <a href="Family.html">Family</a>
             </div>
-        </a>
-
-        <div class="wellnessDiv">
-            <h2>Wellness</h2>
-            <hr class="black">
-
-            <input
-                type="text"
-                class="search-input"
-                placeholder="Search wellness locations by name or keyword here:">
-
-            <div class="search-item">
-                <p><a href="https://lightonyogafitness.com/">Light on Yoga Fitness</a> — Mindful, All Levels, Calm</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://landtrustnal.org/explore-our-lands/preserves-north-alabama/">Land Trust Nature Preserves</a> — Hiking, Nature, Peaceful</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.huntsvillehospital.org/wellness/wellness-centers">Huntsville Hospital Wellness Center</a> — Health, Supportive, Inclusive</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.huntsville.org/listing/huntsville-aquatics-center/1680/">Huntsville Aquatics Center</a> — Low-Impact, Accessible, Wellness</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://24ehealthclubs.com/">24e Health Club</a> — Fitness, Welcoming, All Ages</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://phaze3fitness.com/">Phaze 3 Fitness</a> — Strength, Supportive, Inclusive</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.floathuntsville.com/">Float Huntsville</a> — Stress Relief, Mental Wellness, Health</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.orangetheory.com/en-us">OrangeTheory Fitness</a> — Structured, All Levels, Supportive</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.purebarre.com/">Pure Barre</a> — Low-Impact, All Ages, Inclusive</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.huntsvilleal.gov/environment/green-team/nature-preserves/hays-nature-preserve/">Hays Nature Preserve</a> — Quiet, Outdoors, Accessible</p>
-            </div>
-
         </div>
 
-        <script src="script.js"></script>
-    </body>
+        <div class="dropdown">
+            <button class="dropbtn">Community Spotlight</button>
+            <div class="dropdown-content">
+                <a href="https://www.huntsville.org/listing/big-spring-international-park/862/">Big Spring Park</a>
+                <a href="https://www.midcitydistrict.com">MidCity District</a>
+                <a href="https://www.rocketcenter.com">Space & Rocket Center</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+                <a href="AboutUs.html">About the Developers</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">References</button>
+            <div class="dropdown-content">
+                <a href="References.html">References Page</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER LINK -->
+    <a href="index.html">
+        <section class="resource-header">
+            <h1 id="bigHeader">Huntsville Community Resource Hub</h1>
+            <hr>
+            <p class="insideP">
+                A community-built guide highlighting food, wellness, entertainment,
+                and family-friendly resources across Huntsville, Alabama.
+            </p>
+        </section>
+    </a>
+
+    <!-- WELLNESS RESOURCES -->
+    <div class="resourceDiv" style="border-left-color: #27ae60;">
+        <h2>Wellness</h2>
+        <hr class="black">
+
+        <input
+            type="text"
+            class="search-input"
+            placeholder="Search wellness locations by name or keyword here:"
+            style="width: 100%; padding: 10px; margin: 15px 0; border-radius: 6px; border: 1px solid #ccc;"
+        >
+
+        <div class="list-item">
+            <p><a href="https://lightonyogafitness.com/">Light on Yoga Fitness</a> — Mindful, All Levels, Calm</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://landtrustnal.org/explore-our-lands/preserves-north-alabama/">Land Trust Nature Preserves</a> — Hiking, Nature, Peaceful</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.huntsvillehospital.org/wellness/wellness-centers">Huntsville Hospital Wellness Center</a> — Health, Supportive, Inclusive</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.huntsville.org/listing/huntsville-aquatics-center/1680/">Huntsville Aquatics Center</a> — Low-Impact, Accessible, Wellness</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://24ehealthclubs.com/">24e Health Club</a> — Fitness, Welcoming, All Ages</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://phaze3fitness.com/">Phaze 3 Fitness</a> — Strength, Supportive, Inclusive</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.floathuntsville.com/">Float Huntsville</a> — Stress Relief, Mental Wellness, Health</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.orangetheory.com/en-us">OrangeTheory Fitness</a> — Structured, All Levels, Supportive</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.purebarre.com/">Pure Barre</a> — Low-Impact, All Ages, Inclusive</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.huntsvilleal.gov/environment/green-team/nature-preserves/hays-nature-preserve/">Hays Nature Preserve</a> — Quiet, Outdoors, Accessible</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
