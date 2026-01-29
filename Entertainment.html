@@ -1,75 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Entertainment</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-
-        <a href="index.html" class="header-link">
-            <div class="div1">
-                <h2 class="center white">Huntsville Community Resource Hub</h2>
-                <hr>
-                <p class="center white">
-                    This is a Resource Website built to highlight resources available to the community.
-                    Huntsville, Alabama is a dynamic city built on innovation, opportunity, and a bold
-                    vision for what's next.
-                </p>
-            </div>
-        </a>
-
-        <div class="entertainDiv">
-            <h2>Entertainment</h2>
-            <hr class="black">
-
-            <input
-              type="text"
-              class="search-input"
-              placeholder="Search entertainment destinations by name or keyword here:"
-            >
-
-            <div class="search-item">
-                <p><a href="https://theorionhuntsville.com/">The Orion Amphitheater</a> — Concerts, Community Events, All Ages</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://campus805.com/">Campus No. 805</a> — Social, Walkable, Community Gathering</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.stovehouse.com/">Stovehouse</a> — Modern, Open-Air, Community Gathering</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.vonbrauncenter.com/">Von Braun Center</a> — Live Music, Accessible, Social</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://starsandstrikes.com/locations/huntsville-al/">Stars and Strikes</a> — Games, Bowling, All Ages Fun</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.highpointclimbing.com/locations/midcity">High Point Climbing & Fitness</a> — Active, Inclusive, Beginner-Friendly</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.daveandbusters.com/us/en/about/locations/huntsville">Dave and Busters</a> — Games, Casual, All Ages</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://levitylive.com/huntsville/">Stand Up Live Huntsville</a> — Comedy, Relaxed, Community Nights</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.cinemark.com/theatres/al-huntsville/cinemark-bridge-street-and-xd">Cinemark Bridge Street Cinema</a> — Movies, Comfortable, All Ages</p>
-            </div>
-
-            <div class="search-item">
-                <p><a href="https://www.huntsville.org/things-to-do/shopping/bridge-street-town-centre/">Bridge Street Town Centre</a> — Shopping, Events, Walkable</p>
+<head>
+    <title>Entertainment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- DROPDOWN NAV -->
+    <div class="dropdownDiv">
+        <div class="dropdown">
+            <button class="dropbtn">Resources</button>
+            <div class="dropdown-content">
+                <a href="Food.html">Food</a>
+                <a href="Attraction.html">Attraction</a>
+                <a href="Entertainment.html">Entertainment</a>
+                <a href="Wellness.html">Wellness</a>
+                <a href="Family.html">Family</a>
             </div>
         </div>
 
-        <script src="script.js"></script>
-    </body>
+        <div class="dropdown">
+            <button class="dropbtn">Community Spotlight</button>
+            <div class="dropdown-content">
+                <a href="https://www.huntsville.org/listing/big-spring-international-park/862/">Big Spring Park</a>
+                <a href="https://www.midcitydistrict.com">MidCity District</a>
+                <a href="https://www.rocketcenter.com">Space & Rocket Center</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+                <a href="AboutUs.html">About the Developers</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">References</button>
+            <div class="dropdown-content">
+                <a href="References.html">References Page</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER LINK -->
+    <a href="index.html">
+        <section class="resource-header">
+            <h1 id="bigHeader">Huntsville Community Resource Hub</h1>
+            <hr>
+            <p class="insideP">
+                A community-built guide highlighting food, wellness, entertainment,
+                and family-friendly resources across Huntsville, Alabama.
+            </p>
+        </section>
+    </a>
+
+    <!-- ENTERTAINMENT RESOURCES -->
+    <div class="resourceDiv" style="border-left-color: #8e44ad;">
+        <h2>Entertainment</h2>
+        <hr class="black">
+
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search entertainment destinations by name or keyword here:"
+          style="width: 100%; padding: 10px; margin: 15px 0; border-radius: 6px; border: 1px solid #ccc;"
+        >
+
+        <div class="list-item">
+            <p><a href="https://theorionhuntsville.com/">The Orion Amphitheater</a> — Concerts, Community Events, All Ages</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://campus805.com/">Campus No. 805</a> — Social, Walkable, Community Gathering</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.stovehouse.com/">Stovehouse</a> — Modern, Open-Air, Community Gathering</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.vonbrauncenter.com/">Von Braun Center</a> — Live Music, Accessible, Social</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://starsandstrikes.com/locations/huntsville-al/">Stars and Strikes</a> — Games, Bowling, All Ages Fun</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.highpointclimbing.com/locations/midcity">High Point Climbing & Fitness</a> — Active, Inclusive, Beginner-Friendly</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.daveandbusters.com/us/en/about/locations/huntsville">Dave and Busters</a> — Games, Casual, All Ages</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://levitylive.com/huntsville/">Stand Up Live Huntsville</a> — Comedy, Relaxed, Community Nights</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.cinemark.com/theatres/al-huntsville/cinemark-bridge-street-and-xd">Cinemark Bridge Street Cinema</a> — Movies, Comfortable, All Ages</p>
+        </div>
+
+        <div class="list-item">
+            <p><a href="https://www.huntsville.org/things-to-do/shopping/bridge-street-town-centre/">Bridge Street Town Centre</a> — Shopping, Events, Walkable</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
