@@ -1,5 +1,4 @@
 console.log("Welcome to the Huntsville Community Resource Hub!");
-
 // -------------------- SEARCH FUNCTION --------------------
 document.addEventListener("DOMContentLoaded", function () {
     const searchInputs = document.querySelectorAll(".search-input");
@@ -21,6 +20,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("resourceSearch");
+    const items = document.querySelectorAll(".list-item.search-item");
+
+    searchInput.addEventListener("input", function () {
+        const value = searchInput.value.toLowerCase().trim();
+        items.forEach(item => {
+            item.style.display = value === "" || item.textContent.toLowerCase().includes(value)
+                ? ""
+                : "none";
+        });
+    });
+});
 // -------------------- EMAILJS FORM --------------------
 if (typeof emailjs !== "undefined") {
     emailjs.init("3WSDRDWGSC7KAdTJ-"); // public key
