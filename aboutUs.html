@@ -1,36 +1,85 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>About Us</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <!-- Background Video -->
-
-        <!-- Header -->
-        <a href="index.html" class="header-link">
-            <div class="div1">
-            <h2 class="center white">Huntsville Community Resource Hub</h2>
-            <hr>
-                <p class="center white">
-          This is a Resource Website built to highlight resources available to the community. Huntsville, Alabama is a dynamic city built on innovation, opportunity, and a bold vision for what's next.
-                </p>
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- DROPDOWN NAV -->
+    <div class="dropdownDiv">
+        <div class="dropdown">
+            <button class="dropbtn">Resources</button>
+            <div class="dropdown-content">
+                <a href="Food.html">Food</a>
+                <a href="Attraction.html">Attraction</a>
+                <a href="Entertainment.html">Entertainment</a>
+                <a href="Wellness.html">Wellness</a>
+                <a href="Family.html">Family</a>
             </div>
-        </a>
-        
-        <div class = "aboutUsDiv">
-            <h2>Max - </h2>
-            <br><br>
-            <hr>
-            <h3><a id = "nameLink" href = "https://www.linkedin.com/in/jasper-williams-622738346/">Jasper</a></h3>
-            <p class = "black"> A second-year sophmore currently attending the Alabama School of Cyber Technology and Engineering.</p>
-            <hr>
-            <br><br>
-            <h2>Aiden - </h2>
-            <br><br>
-            <h2>Jack - </h2>
         </div>
-        <script src="script.js"></script>
-    </body>
+
+        <div class="dropdown">
+            <button class="dropbtn">Community Spotlight</button>
+            <div class="dropdown-content">
+                <a href="https://www.huntsville.org/listing/big-spring-international-park/862/">Big Spring Park</a>
+                <a href="https://www.midcitydistrict.com">MidCity District</a>
+                <a href="https://www.rocketcenter.com">Space & Rocket Center</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">About Us</button>
+            <div class="dropdown-content">
+                <a href="AboutUs.html">About the Developers</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">References</button>
+            <div class="dropdown-content">
+                <a href="References.html">References Page</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER LINK -->
+    <a href="index.html">
+        <section class="resource-header">
+            <h1 id="bigHeader">Huntsville Community Resource Hub</h1>
+            <hr>
+            <p class="insideP">
+                A community-built guide highlighting food, wellness, entertainment,
+                and family-friendly resources across Huntsville, Alabama.
+            </p>
+        </section>
+    </a>
+
+    <!-- ABOUT US CONTENT -->
+    <div class="resourceDiv" style="border-left-color: #16a085;">
+        <h2>About Us</h2>
+        <hr class="black">
+
+        <div class="list-item">
+            <h3>Max</h3>
+            <p>Second-year sophomore at the Alabama School for Cyber Technology and Engineering passionate about STEM and pursuing mechanical engineering. Involved in TSA Greenpower, rocketry, school ambassadorship, and varsity soccer, building skills in engineering, leadership, and teamwork.</p>
+        </div>
+
+        <div class="list-item">
+            <h3>Jasper</h3>
+            <p>A high-achieving sophomore at the Alabama School of Cyber Technology and Engineering with strong interests in technology, languages, and military service. A proven team leader who balances rigorous academics, athletics, and leadership roles while actively exploring pathways in engineering, cyber, and military intelligence.</p>
+        </div>
+
+        <div class="list-item">
+            <h3>Aiden</h3>
+            <p>— </p>
+        </div>
+
+        <div class="list-item">
+            <h3>Jack</h3>
+            <p>— </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
