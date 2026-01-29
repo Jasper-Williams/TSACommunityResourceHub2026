@@ -1,74 +1,101 @@
+<!-- -------------------- UNIVERSAL LIST PAGE -------------------- -->
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Food</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <title>Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="dropdownDiv">
+    <div class="dropdown">
+        <button class="dropbtn">Resources</button>
+        <div class="dropdown-content">
+            <a href="Food.html">Food</a>
+            <a href="Attraction.html">Attraction</a>
+            <a href="Entertainment.html">Entertainment</a>
+            <a href="Wellness.html">Wellness</a>
+            <a href="Family.html">Family</a>
+        </div>
+    </div>
 
-    <body>
-        <!-- Header -->
-        <a href="index.html" class="header-link">
-            <div class="div1">
-            <h2 class="center white">Huntsville Community Resource Hub</h2>
-            <hr>
-                <p class="center white">
-          This is a Resource Website built to highlight resources available to the community. Huntsville, Alabama is a dynamic city built on innovation, opportunity, and a bold vision for what's next.
-                </p>
-            </div>
-        </a>
+    <div class="dropdown">
+        <button class="dropbtn">Community Spotlight</button>
+        <div class="dropdown-content">
+            <a href="https://www.huntsville.org/listing/big-spring-international-park/862/">Big Spring Park</a>
+            <a href="https://www.midcitydistrict.com">MidCity District</a>
+            <a href="https://www.rocketcenter.com">Space & Rocket Center</a>
+        </div>
+    </div>
 
-        <div class="foodDiv">
-            <h2>Resturants</h2>
-            <hr class="black">
+    <div class="dropdown">
+        <button class="dropbtn">About Us</button>
+        <div class="dropdown-content">
+            <a href="AboutUs.html">About the Developers</a>
+        </div>
+    </div>
 
-            <!-- Search bar -->
-            <input
-              type="text"
-              id="restaurantSearch"
-              placeholder="Search restaurants by name and keyword here:"
-            >
+    <div class="dropdown">
+        <button class="dropbtn">References</button>
+        <div class="dropdown-content">
+            <a href="References.html">References Page</a>
+        </div>
+    </div>
+</div>
 
-            <!-- Each restaurant wrapped in a container -->
-            <div class="restaurant">
-                <p><a href="https://ilovemelt.com/huntsville">MELT Huntsville</a> — Moderate, American, Casual</p>
-                </div>
+<a href="index.html">
+    <section class="resource-header">
+        <h1 id="bigHeader">Huntsville Community Resource Hub</h1>
+        <hr>
+        <p class="insideP">
+            A community-built guide highlighting food, wellness, entertainment,
+            and family-friendly resources across Huntsville, Alabama.
+        </p>
+    </section>
+</a>
 
-            <div class="restaurant">
-                <p><a href="https://www.huntsville.org/listing/bandito-burrito-(governors-drive)/671/">Bandito Burrito</a> — Cheap, Mexican, Casual</p>
-            </div>
+<div class="resourceDiv">
+    <h2>Restaurants</h2>
+    <hr class="black">
 
-            <div class="restaurant">
-                <p><a href="https://www.gscountrykitchen.com">G's Country Kitchen</a> — Cheap, Southern, Casual</p>
-            </div>
+    <div class="list-item">
+        <p><a href="https://ilovemelt.com/huntsville">MELT Huntsville</a> — Moderate, American, Casual</p>
+    </div>
 
-            <div class="restaurant">
-                <p><a href="https://phatsammyshuntsville.com">Phat Sammy's</a> — Cheap, Asian-Fusion, Casual</p>
-            </div>
+    <div class="list-item">
+        <p><a href="https://www.huntsville.org/listing/bandito-burrito-(governors-drive)/671/">Bandito Burrito</a> — Cheap, Mexican, Casual</p>
+    </div>
 
-            <div class="restaurant">
-                <p><a href="https://www.thepoppyandparliament.com">The Poppy and Parliament</a> — Moderate, British, Casual-Moderate</p>
-            </div>
+    <div class="list-item">
+        <p><a href="https://www.gscountrykitchen.com">G's Country Kitchen</a> — Cheap, Southern, Casual</p>
+    </div>
 
-            <div class="restaurant">
-                <p><a href="https://www.thecommercekitchen.com">Commerce Kitchen</a> — Moderate-Expensive, Southern-American, Moderate</p>
-            </div>
+    <div class="list-item">
+        <p><a href="https://phatsammyshuntsville.com">Phat Sammy's</a> — Cheap, Asian-Fusion, Casual</p>
+    </div>
 
-            <div class="restaurant">
-                <p><a href="https://themercadogrouphsv.com/restaurants/the-standard-social-market/">The Standard Social Market</a> — Moderate, American, Casual-Moderate</p>
-            </div>
+    <div class="list-item">
+        <p><a href="https://www.thepoppyandparliament.com">The Poppy and Parliament</a> — Moderate, British, Casual-Moderate</p>
+    </div>
 
-            <div class="restaurant">
-                <p><a href="https://churchstreetfamily.com/restaurants/purveyor/">Purveyor</a> — Expensive, Southern-Fusion, Moderate-Professional</p>
-            </div>
+    <div class="list-item">
+        <p><a href="https://www.thecommercekitchen.com">Commerce Kitchen</a> — Moderate-Expensive, Southern-American, Moderate</p>
+    </div>
 
-            <div class="restaurant">
-                <p><a href="https://www.cottonrowrestaurant.com/">Cotton Row</a> — Expensive, American-FineDining, Professional</p>
-            </div>
+    <div class="list-item">
+        <p><a href="https://themercadogrouphsv.com/restaurants/the-standard-social-market/">The Standard Social Market</a> — Moderate, American, Casual-Moderate</p>
+    </div>
 
-            <div class="restaurant">
-                <p><a href="https://www.domainesouth.com/">Domaine South</a> — Expensive, European-FineDining, Professional</p>
-            </div>
+    <div class="list-item">
+        <p><a href="https://churchstreetfamily.com/restaurants/purveyor/">Purveyor</a> — Expensive, Southern-Fusion, Moderate-Professional</p>
+    </div>
 
-         <script src="script.js"></script> 
-    </body>
+    <div class="list-item">
+        <p><a href="https://www.cottonrowrestaurant.com/">Cotton Row</a> — Expensive, American-FineDining, Professional</p>
+    </div>
+
+    <div class="list-item">
+        <p><a href="https://www.domainesouth.com/">Domaine South</a> — Expensive, European-FineDining, Professional</p>
+    </div>
+</div>
+</body>
 </html>
