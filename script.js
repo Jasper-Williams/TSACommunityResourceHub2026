@@ -1,35 +1,22 @@
 console.log("Welcome to the Huntsville Community Resource Hub!");
 // -------------------- SEARCH FUNCTION --------------------
 document.addEventListener("DOMContentLoaded", function () {
-    const searchInputs = document.querySelectorAll(".search-input");
-
-    searchInputs.forEach(input => {
-        const items = input.parentElement.querySelectorAll(".search-item");
-        if (!items.length) return;
-
-        input.addEventListener("input", function () {
-            const searchValue = input.value.toLowerCase().trim();
-
-            items.forEach(item => {
-                const itemText = item.textContent.toLowerCase();
-                item.style.display = searchValue === "" || itemText.includes(searchValue)
-                    ? ""
-                    : "none";
-            });
-        });
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    const searchInput = document.getElementById("resourceSearch");
-    const items = document.querySelectorAll(".list-item.search-item");
+    const searchInput = document.querySelector(".search-input");
+    const items = document.querySelectorAll(".list-item");
 
     searchInput.addEventListener("input", function () {
         const value = searchInput.value.toLowerCase().trim();
+
         items.forEach(item => {
-            item.style.display = value === "" || item.textContent.toLowerCase().includes(value)
-                ? ""
-                : "none";
+            const categories = (item.dataset.category || "")
+                                .toLowerCase()          
+                                .split(",")             
+                                .map(cat => cat.trim());
+
+            const itemText = item.textContent.toLowerCase();
+            const matchesCategory = categories.some(cat => cat.includes(value));
+
+            item.style.display = (itemText.includes(value) || matchesCategory) ? "" : "none";
         });
     });
 });
@@ -71,5 +58,41 @@ if (form) {
             alert("Something went wrong. Please try again.");
         });
     };
+}''
+
+
+const navLinks = document.querySelectorAll(".nav-link, .nav-page");
+const sections = document.querySelectorAll("section.page");
+const currentPage = window.location.pathname.split("/").pop();
+
+/* ---------- SCROLL-BASED ACTIVE STATE (Home page sections) ---------- */
+if (sections.length > 0) {
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute("id");
+
+                    navLinks.forEach(link => {
+                        link.classList.toggle(
+                            "active",
+                            link.getAttribute("href") === `#${id}`
+                        );
+                    });
+                }
+            });
+        },
+        { threshold: 0.6 }
+    );
+
+    sections.forEach(section => observer.observe(section));
 }
 
+/* ---------- PAGE-BASED ACTIVE STATE (About / References) ---------- */
+navLinks.forEach(link => {
+    const href = link.getAttribute("href");
+
+    if (href === currentPage) {
+        link.classList.add("active");
+    }
+});
