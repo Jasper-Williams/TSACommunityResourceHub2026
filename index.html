@@ -7,161 +7,523 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body class = "home">
+<body class="home">
 
-<!-- NAVBAR -->
-<div class="dropdownDiv">
-    <div class="dropdown">
-        <button class="dropbtn">Resources</button>
-        <div class="dropdown-content">
-            <a href="Food.html">Food</a>
-            <a href="Attraction.html">Attraction</a>
-            <a href="Entertainment.html">Entertainment</a>
-            <a href="Wellness.html">Wellness</a>
-            <a href="Family.html">Family</a>
-        </div>
+    <!-- NAVBAR -->
+    <div class="dropdownDiv">
+        <a href="#topSection" class = "nav-link">
+            <button class="dropbtn">Home Page</button>
+        </a>
+        
+        <a href="#communitySpotlight" class = "nav-link">
+            <button class="dropbtn">Community Spotlight</button>
+        </a>
+
+        <a href="#resourceDirectory" class = "nav-link">
+            <button class="dropbtn">Resources</button>
+        </a>
+        
+        <a href="#addResource" class = "nav-link">
+            <button class="dropbtn">Add a Resource</button>
+        </a>
+
+        <a href="AboutUs.html" class = "nav-link">
+            <button class="Borderdropbtn">About the Developers</button>
+        </a>
+
+        <a href="References.html" class = "nav-link">
+            <button class="Borderdropbtn">References</button>
+        </a>
+
     </div>
 
-    <div class="dropdown">
-        <button class="dropbtn">Community Spotlight</button>
-        <div class="dropdown-content">
-            <a href="https://www.huntsville.org/listing/big-spring-international-park/862/">Big Spring Park</a>
-            <a href="https://www.midcitydistrict.com">MidCity District</a>
-            <a href="https://www.rocketcenter.com">Space & Rocket Center</a>
+    <!-- HEADER PAGE -->
+    <section class="page header" id="topSection">
+        <h1 id="bigHeader">Huntsville Community Resource Hub</h1>
+        <hr>
+        <p class="insideP">
+            A community-built guide highlighting food, wellness, entertainment,
+            and family-friendly resources across Huntsville, Alabama.
+        </p>
+    </section>
+
+    <!-- CAROUSEL PAGE -->
+    <section class="page carouselPage" id="communitySpotlight">
+        <div class="carouselTrack">
+            <div class="featureDivs">
+                
+                <div class="feature">
+                    <h4>
+                        <a class="resourceLinkColor" href="https://www.huntsville.org/listing/big-spring-international-park/862/">
+                            Big Spring Park
+                        </a>
+                    </h4>
+                    <p>
+                        Enjoy Huntsville's central green space offering walking paths, fountains, and seasonal events.
+                        It's perfect for family outings, outdoor activities, and exploring downtown scenery.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h4>
+                        <a class="resourceLinkColor" href="https://hsvbg.org/">
+                            Botanical Gardens
+                        </a>
+                    </h4>
+                    <p>
+                        Wander through beautifully curated gardens and trails showcasing native and exotic plants.
+                        Educational programs and peaceful outdoor spaces make it ideal for all ages.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h4>
+                        <a class="resourceLinkColor" href="https://www.midcitydistrict.com">
+                            MidCity District
+                        </a>
+                    </h4>
+                    <p>
+                        Experience Huntsville's vibrant hub for dining, entertainment, and events.
+                        Local shops, restaurants, and community gatherings make it a lively destination for visitors and residents alike.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h4>
+                        <a class="resourceLinkColor" href="https://www.rocketcenter.com">
+                            Space &amp; Rocket Center
+                        </a>
+                    </h4>
+                    <p>
+                        Explore hands-on exhibits, rockets, and space artifacts.
+                        This interactive destination inspires curiosity about science, technology, and the history of space exploration.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h4>
+                        <a class="resourceLinkColor" href="https://lowemill.art/">
+                            Lowe Mill ARTS & Entertainment
+                        </a>
+                    </h4>
+                    <p>
+                        Discover a thriving arts community with studios, galleries, and live performances.
+                        Workshops and events allow visitors to engage with local artists and creative projects.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h4>
+                        <a class="resourceLinkColor" href="https://earlyworks.com/">
+                            EarlyWorks Children's Museum
+                        </a>
+                    </h4>
+                    <p>
+                        Interactive exhibits and hands-on activities spark curiosity and learning for kids.
+                        History, science, and play-based experiences make it a fun and educational family destination.
+                    </p>
+                </div>
+
+
+                <!-- Duplicate cards for smooth loop -->
+                <div class="feature">
+                    <h4>
+                        <a class="resourceLinkColor" href="https://www.huntsville.org/listing/big-spring-international-park/862/">
+                            Big Spring Park
+                        </a>
+                    </h4>
+                    <p>
+                        Enjoy Huntsville's central green space offering walking paths, fountains, and seasonal events.
+                        It's perfect for family outings, outdoor activities, and exploring downtown scenery.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h4>
+                        <a class="resourceLinkColor" href="https://hsvbg.org/">
+                            Botanical Gardens
+                        </a>
+                    </h4>
+                    <p>
+                        Wander through beautifully curated gardens and trails showcasing native and exotic plants.
+                        Educational programs and peaceful outdoor spaces make it ideal for all ages.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h4>
+                        <a class="resourceLinkColor" href="https://www.midcitydistrict.com">
+                            MidCity District
+                        </a>
+                    </h4>
+                    <p>
+                        Experience Huntsville's vibrant hub for dining, entertainment, and events.
+                        Local shops, restaurants, and community gatherings make it a lively destination for visitors and residents alike.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h4>
+                        <a class="resourceLinkColor" href="https://www.rocketcenter.com">
+                            Space &amp; Rocket Center
+                        </a>
+                    </h4>
+                    <p>
+                        Explore hands-on exhibits, rockets, and space artifacts.
+                        This interactive destination inspires curiosity about science, technology, and the history of space exploration.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h4>
+                        <a class="resourceLinkColor" href="https://lowemill.art/">
+                            Lowe Mill ARTS & Entertainment
+                        </a>
+                    </h4>
+                    <p>
+                        Discover a thriving arts community with studios, galleries, and live performances.
+                        Workshops and events allow visitors to engage with local artists and creative projects.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <h4>
+                        <a class="resourceLinkColor" href="https://earlyworks.com/">
+                            EarlyWorks Children's Museum
+                        </a>
+                    </h4>
+                    <p>
+                        Interactive exhibits and hands-on activities spark curiosity and learning for kids.
+                        History, science, and play-based experiences make it a fun and educational family destination.
+                    </p>
+                </div>
+
+            </div>
         </div>
+    </section>
+
+    <!-- RESOURCE DIRECTORY -->
+    <section class="page resourcePage" id="resourceDirectory">
+        <div class="resourceDiv">
+            <h2>Resource Directory</h2>
+            <p>
+                Browse an organized directory of community resources in Huntsville.
+                Add or explore resources in categories like food, wellness, entertainment, and family-friendly activities.
+            </p>
+            <hr class="black">
+            <div class = "searchContainer">
+            <input
+                type="text"
+                class="search-input"
+                placeholder="Search attractions by name or keyword here:"
+            >
+            </div>
+
+            <div class="resourceDirectoryDiv">
+
+                <div class="list-item" data-category="Family, Wellness" data-keywords="park, outdoor, walking, fountains, seasonal events">
+                    <a href="https://www.huntsville.org/listing/big-spring-international-park/862/">Big Spring Park</a>
+                    <p>Huntsville's central green space offering walking paths, fountains, and seasonal events, ideal for families and wellness activities.</p>
+                </div>
+
+                <div class="list-item" data-category="Family, Wellness" data-keywords="garden, trails, plants, educational, peaceful">
+                    <a href="https://hsvbg.org/">Botanical Gardens</a>
+                    <p>Beautifully curated gardens and trails showcasing native and exotic plants. Perfect for learning, walking, and enjoying nature.</p>
+                </div>
+
+                <div class="list-item" data-category="Food, Attraction, Entertainment" data-keywords="dining, shopping, nightlife, events, community">
+                    <a href="https://www.midcitydistrict.com">MidCity District</a>
+                    <p>Vibrant hub for dining, shopping, nightlife, and community events. Great for entertainment and exploring local attractions.</p>
+                </div>
+
+                <div class="list-item" data-category="Food" data-keywords="american, casual, moderate, dining">
+                    <a href="https://ilovemelt.com/huntsville">MELT Huntsville</a>
+                    <p>Moderate, casual American dining with a friendly atmosphere.</p>
+                </div>
+
+                <div class="list-item" data-category="Food" data-keywords="mexican, casual, cheap, burrito">
+                    <a href="https://www.huntsville.org/listing/bandito-burrito-(governors-drive)/671/">Bandito Burrito</a>
+                    <p>Affordable Mexican food with a casual dining experience.</p>
+                </div>
+
+                <div class="list-item" data-category="Food" data-keywords="southern, casual, breakfast, lunch, cheap">
+                    <a href="https://www.gscountrykitchen.com">G's Country Kitchen</a>
+                    <p>Casual Southern cuisine serving breakfast and lunch in a friendly environment.</p>
+                </div>
+
+                <div class="list-item" data-category="Food" data-keywords="asian-fusion, casual, cheap, dining">
+                    <a href="https://phatsammyshuntsville.com">Phat Sammy's</a>
+                    <p>Affordable Asian-fusion cuisine with a casual dining experience.</p>
+                </div>
+
+                <div class="list-item" data-category="Food" data-keywords="british, casual, moderate, dining">
+                    <a href="https://www.thepoppyandparliament.com">The Poppy and Parliament</a>
+                    <p>Moderate British cuisine in a relaxed and casual-approachable setting.</p>
+                </div>
+
+                <div class="list-item" data-category="Food" data-keywords="southern, moderate, dining, upscale">
+                    <a href="https://www.thecommercekitchen.com">Commerce Kitchen</a>
+                    <p>Moderate-to-expensive Southern-American cuisine in a welcoming, mid-range dining experience.</p>
+                </div>
+
+                <div class="list-item" data-category="Food" data-keywords="american, casual, dining, market, moderate">
+                    <a href="https://themercadogrouphsv.com/restaurants/the-standard-social-market/">The Standard Social Market</a>
+                    <p>Moderate American cuisine in a casual-to-moderate dining setting with community vibes.</p>
+                </div>
+
+                <div class="list-item" data-category="Food" data-keywords="southern, expensive, dining, fusion">
+                    <a href="https://churchstreetfamily.com/restaurants/purveyor/">Purveyor</a>
+                    <p>Upscale Southern-fusion cuisine in a professional but approachable dining atmosphere.</p>
+                </div>
+
+                <div class="list-item" data-category="Food" data-keywords="american, expensive, fine dining, professional">
+                    <a href="https://www.cottonrowrestaurant.com/">Cotton Row</a>
+                    <p>Elegant American fine dining with a professional and refined environment.</p>
+                </div>
+
+                <div class="list-item" data-category="Food" data-keywords="european, expensive, fine dining, professional">
+                    <a href="https://www.domainesouth.com/">Domaine South</a>
+                    <p>Upscale European fine dining with a professional atmosphere for special occasions.</p>
+                </div>
+
+                <div class="list-item" data-category="Family, Outdoor" data-keywords="waterpark, recreation, family, fun">
+                    <a href="https://pointmallardpark.com/">Point Mallard Park</a>
+                    <p>Waterpark and outdoor recreation destination with fun activities for the whole family.</p>
+                </div>
+
+                <div class="list-item" data-category="Family, Educational" data-keywords="museum, kids, hands-on, interactive">
+                    <a href="https://earlyworks.com/earlyworks-childrens-museum/">EarlyWorks Children's Museum</a>
+                    <p>Hands-on exhibits sparking curiosity and learning for kids in a welcoming environment.</p>
+                </div>
+
+                <div class="list-item" data-category="Family, Educational" data-keywords="library, programs, events, children">
+                    <a href="https://hmcpl.org/">Huntsville–Madison County Public Library</a>
+                    <p>Library with programs and events for all ages, perfect for family learning and literacy activities.</p>
+                </div>
+
+                <div class="list-item" data-category="Family, Educational" data-keywords="art, museum, creative, exhibitions">
+                    <a href="https://hsvmuseum.org/">Huntsville Museum of Art</a>
+                    <p>Creative museum experiences with exhibitions and programs for visitors of all ages.</p>
+                </div>
+
+                <div class="list-item" data-category="Family, Active" data-keywords="trampoline, indoor, energy, fun">
+                    <a href="https://www.urbanair.com/alabama-huntsville/">Urban Air Adventure Park</a>
+                    <p>Indoor adventure park offering active, energetic fun for families.</p>
+                </div>
+
+                <div class="list-item" data-category="Family, Active" data-keywords="roller skating, indoor, all ages, fun">
+                    <a href="https://www.rollertime.com/">Roller Time</a>
+                    <p>Indoor roller skating and entertainment suitable for all ages.</p>
+                </div>
+
+                <div class="list-item" data-category="Family, Outdoor" data-keywords="park, playground, recreation">
+                    <a href="https://www.huntsville.org/listing/sharon-johnston-park/74/">Sharon Johnston Park</a>
+                    <p>Spacious outdoor park with playgrounds and recreational areas for families.</p>
+                </div>
+
+                <div class="list-item" data-category="Family, Educational" data-keywords="museum, science, kids, discovery">
+                    <a href="https://www.cookmuseum.org/">Cook Museum of Natural Science</a>
+                    <p>Interactive science exhibits designed for kids and family discovery.</p>
+                </div>
+
+                <div class="list-item" data-category="Family, Outdoor" data-keywords="park, splash pad, recreation">
+                    <a href="https://www.huntsville.org/listing/dublin-memorial-park/1681/">Dublin Park</a>
+                    <p>Park with splash pads and recreational areas perfect for families.</p>
+                </div>
+
+                <div class="list-item" data-category="Entertainment, Concerts" data-keywords="amphitheater, live, music, events">
+                    <a href="https://theorionhuntsville.com/">The Orion Amphitheater</a>
+                    <p>Outdoor amphitheater hosting concerts and community events for all ages.</p>
+                </div>
+
+                <div class="list-item" data-category="Entertainment, Community" data-keywords="brewery, social, community, events">
+                    <a href="https://campus805.com/">Campus No. 805</a>
+                    <p>Community gathering space with social events, breweries, and live music.</p>
+                </div>
+
+                <div class="list-item" data-category="Entertainment, Social" data-keywords="modern, open-air, community, events">
+                    <a href="https://www.stovehouse.com/">Stovehouse</a>
+                    <p>Modern open-air entertainment and community gathering space with shops and events.</p>
+                </div>
+
+                <div class="list-item" data-category="Entertainment, Concerts" data-keywords="center, live music, events">
+                    <a href="https://www.vonbrauncenter.com/">Von Braun Center</a>
+                    <p>Event center hosting concerts, sports, and live performances for the community.</p>
+                </div>
+
+                <div class="list-item" data-category="Entertainment, Games" data-keywords="bowling, games, fun, family">
+                    <a href="https://starsandstrikes.com/locations/huntsville-al/">Stars and Strikes</a>
+                    <p>Family-friendly bowling and arcade games for entertainment and group fun.</p>
+                </div>
+
+                <div class="list-item" data-category="Entertainment, Active" data-keywords="climbing, fitness, beginner-friendly, active">
+                    <a href="https://www.highpointclimbing.com/locations/midcity">High Point Climbing &amp; Fitness</a>
+                    <p>Climbing gym and fitness center offering an active, beginner-friendly environment.</p>
+                </div>
+
+                <div class="list-item" data-category="Entertainment, Games" data-keywords="arcade, casual, family">
+                    <a href="https://www.daveandbusters.com/us/en/about/locations/huntsville">Dave and Busters</a>
+                    <p>Games and casual dining experience for all ages in a fun, social environment.</p>
+                </div>
+
+                <div class="list-item" data-category="Entertainment, Comedy" data-keywords="stand-up, comedy, shows, night events">
+                    <a href="https://levitylive.com/huntsville/">Stand Up Live Huntsville</a>
+                    <p>Comedy club hosting stand-up shows and community nights in a relaxed setting.</p>
+                </div>
+
+                <div class="list-item" data-category="Entertainment, Movies" data-keywords="cinema, movies, comfortable, all ages">
+                    <a href="https://www.cinemark.com/theatres/al-huntsville/cinemark-bridge-street-and-xd">Cinemark Bridge Street Cinema</a>
+                    <p>Movie theater providing comfortable seating and a full cinema experience for all ages.</p>
+                </div>
+
+                <div class="list-item" data-category="Entertainment, Shopping" data-keywords="shopping, events, walkable, community">
+                    <a href="https://www.huntsville.org/things-to-do/shopping/bridge-street-town-centre/">Bridge Street Town Centre</a>
+                    <p>Shopping and event hub offering a walkable community space with dining and entertainment.</p>
+                </div>
+
+                <div class="list-item" data-category="Attraction, Family" data-keywords="space, museum, rockets, educational">
+                    <a href="https://www.rocketcenter.com/">U.S. Space &amp; Rocket Center</a>
+                    <p>Interactive museum with space artifacts, rockets, and hands-on exhibits inspiring science learning.</p>
+                </div>
+
+                <div class="list-item" data-category="Family, Outdoor" data-keywords="park, open, scenic, community">
+                    <a href="https://www.huntsville.org/listing/big-spring-international-park/862/">Big Spring International Park</a>
+                    <p>Open, scenic park ideal for community gatherings, walking, and enjoying downtown Huntsville.</p>
+                </div>
+
+                <div class="list-item" data-category="Family, Outdoor" data-keywords="nature, trails, hiking, peaceful">
+                    <a href="https://www.alapark.com/parks/monte-sano-state-park">Monte Sano State Park</a>
+                    <p>Nature park with accessible trails, scenic views, and peaceful surroundings for outdoor recreation.</p>
+                </div>
+
+                <div class="list-item" data-category="Family, Wellness" data-keywords="garden, relaxing, seasonal, family-friendly">
+                    <a href="https://hsvbg.org/">Huntsville Botanical Garden</a>
+                    <p>Seasonal gardens providing relaxing outdoor spaces for family-friendly visits and wellness walks.</p>
+                </div>
+
+                <div class="list-item" data-category="Entertainment, Arts" data-keywords="arts, local, creative, inclusive, community">
+                    <a href="https://lowemill.art/">Lowe Mill ARTS &amp; Entertainment</a>
+                    <p>Thriving arts community with studios, galleries, live performances, and inclusive events for all.</p>
+                </div>
+
+                <div class="list-item" data-category="Family, History" data-keywords="history, culture, museum, all ages">
+                    <a href="https://burrittonthemountain.com/">Burritt on the Mountain</a>
+                    <p>Historic site and museum showcasing culture and history with educational programs for all ages.</p>
+                </div>
+
+                <div class="list-item" data-category="Family, Outdoor" data-keywords="park, sports, open space, community">
+                    <a href="https://www.huntsville.org/listing/john-hunt-park/765/">John Hunt Park</a>
+                    <p>Large open park with sports facilities and community-friendly spaces for families.</p>
+                </div>
+
+                <div class="list-item" data-category="Family, Outdoor, Nature" data-keywords="trails, nature, outdoors, hiking">
+                    <a href="https://landtrustnal.org/explore-our-lands/preserves-north-alabama/">Land Trust Nature Preserves</a>
+                    <p>Trails and preserves offering calm, inclusive outdoor spaces for hiking and nature exploration.</p>
+                </div>
+
+                <div class="list-item" data-category="Family, History" data-keywords="museum, historic, cultural, educational">
+                    <a href="https://weedenhousemuseum.com/">Weeden House Museum</a>
+                    <p>Historic home museum offering cultural education and a welcoming environment for visitors.</p>
+                </div>
+
+                <div class="list-item" data-category="Family, Community" data-keywords="walkable, downtown, events, gathering">
+                    <a href="https://www.downtownhuntsville.org/">Downtown Huntsville Square</a>
+                    <p>Walkable downtown hub hosting community events, shops, and cultural activities.</p>
+                </div>
+
+                <div class="list-item" data-category="Wellness, Fitness" data-keywords="yoga, mindful, calm, classes, all levels">
+                    <a href="https://lightonyogafitness.com/">Light on Yoga Fitness</a>
+                    <p>Yoga studio offering mindful classes for all levels in a calm environment.</p>
+                </div>
+
+                <div class="list-item" data-category="Wellness, Outdoor" data-keywords="nature, trails, hiking, calm">
+                    <a href="https://landtrustnal.org/explore-our-lands/preserves-north-alabama/">Land Trust Nature Preserves</a>
+                    <p>Outdoor preserves with trails for peaceful hiking and nature immersion.</p>
+                </div>
+
+                <div class="list-item" data-category="Wellness, Fitness" data-keywords="fitness, gym, health, wellness, supportive">
+                    <a href="https://www.huntsvillehospital.org/wellness/wellness-centers">Huntsville Hospital Wellness Center</a>
+                    <p>Fitness and wellness center offering supportive programs for health and well-being.</p>
+                </div>
+
+                <div class="list-item" data-category="Wellness, Fitness, Aquatic" data-keywords="swimming, low-impact, aquatic, wellness">
+                    <a href="https://www.huntsville.org/listing/huntsville-aquatics-center/1680/">Huntsville Aquatics Center</a>
+                    <p>Low-impact aquatic activities and wellness programs suitable for all ages.</p>
+                </div>
+
+                <div class="list-item" data-category="Wellness, Fitness" data-keywords="gym, classes, all ages, welcoming">
+                    <a href="https://24ehealthclubs.com/">24e Health Club</a>
+                    <p>Inclusive fitness center with classes for all ages and wellness programs.</p>
+                </div>
+
+                <div class="list-item" data-category="Wellness, Fitness" data-keywords="strength, gym, supportive, inclusive">
+                    <a href="https://phaze3fitness.com/">Phaze 3 Fitness</a>
+                    <p>Strength and fitness gym offering supportive, inclusive training programs.</p>
+                </div>
+
+                <div class="list-item" data-category="Wellness, Relaxation" data-keywords="float, mental wellness, stress relief, calm">
+                    <a href="https://www.floathuntsville.com/">Float Huntsville</a>
+                    <p>Floatation therapy and wellness experiences designed for stress relief and mental health.</p>
+                </div>
+
+                <div class="list-item" data-category="Wellness, Fitness" data-keywords="structured, supportive, all levels">
+                    <a href="https://www.orangetheory.com/en-us">OrangeTheory Fitness</a>
+                    <p>Structured fitness classes supporting participants of all levels in a motivating environment.</p>
+                </div>
+
+                <div class="list-item" data-category="Wellness, Fitness" data-keywords="low-impact, barre, inclusive, all ages">
+                    <a href="https://www.purebarre.com/">Pure Barre</a>
+                    <p>Low-impact barre classes suitable for all ages and fitness levels in an inclusive environment.</p>
+                </div>
+
+                <div class="list-item" data-category="Wellness, Outdoor" data-keywords="nature, quiet, trails, accessible">
+                    <a href="https://www.huntsvilleal.gov/environment/green-team/nature-preserves/hays-nature-preserve/">Hays Nature Preserve</a>
+                    <p>Quiet nature preserve with accessible trails for relaxation, wellness, and outdoor enjoyment.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM PAGE -->
+    <section class="page formPage" id="addResource">
+        <h3>Add a Resource</h3>
+        <p>If we missed a resource, submit it below for review.</p>
+
+        <form>
+            <label>Resource Name</label>
+            <input type="text" required>
+
+            <label>Website</label>
+            <input type="url" placeholder="https://example.org" required>
+
+            <label>Resource Type</label>
+            <select required>
+                <option value="">Choose a resource type</option>
+                <option>Food</option>
+                <option>Attraction</option>
+                <option>Family</option>
+                <option>Entertainment</option>
+                <option>Wellness</option>
+            </select>
+
+            <label>Description</label>
+            <textarea required></textarea>
+
+            <label>Tags</label>
+            <input type="text" placeholder="affordable, family-friendly">
+
+            <button type="submit">Submit Resource</button>
+        </form>
+    </section>
+
+    <!-- TSA LOGO -->
+    <div class="TSALogoDiv">
+        <a href="https://tsaweb.org">
+            <img src="https://tsaweb.org/ResourcePackages/Bootstrap5/assets/dist/img/TSA_logo.png" alt="TSA Logo">
+        </a>
     </div>
 
-    <div class="dropdown">
-        <button class="dropbtn">About Us</button>
-        <div class="dropdown-content">
-            <a href="AboutUs.html">About the Developers</a>
-        </div>
-    </div>
-
-    <div class="dropdown">
-        <button class="dropbtn">References</button>
-        <div class="dropdown-content">
-            <a href="References.html">References Page</a>
-        </div>
-    </div>
-</div>
-
-<!-- HERO PAGE -->
-<section class="page header">
-    <h1 id="bigHeader">Huntsville Community Resource Hub</h1>
-    <hr>
-    <p class="insideP">
-        A community-built guide highlighting food, wellness, entertainment,
-        and family-friendly resources across Huntsville, Alabama.
-    </p>
-</section>
-
-<!-- CAROUSEL PAGE -->
-<section class="page carousel">
-    <div class="carouselTrack">
-        <div class="featureDivs">
-            <div class="feature">
-                <h4>Explore Resources</h4>
-                <p>Browse curated food, wellness, entertainment, and family-friendly resources across Huntsville. These listings help residents and visitors quickly find services that are practical and easy to access.</p>
-            </div>
-
-            <div class="feature">
-                <h4>Discover Huntsville</h4>
-                <p>Explore local landmarks, attractions, and hidden gems that make Huntsville unique. Whether you're new or have lived here for years, discover places worth visiting.</p>
-            </div>
-
-            <div class="feature">
-                <h4>Community Powered</h4>
-                <p>Resources are contributed by residents and carefully reviewed for accuracy. This collaborative approach ensures the hub reflects reliable local knowledge.</p>
-            </div>
-
-            <div class="feature">
-                <h4>Stay Informed</h4>
-                <p>Access up-to-date information on services, events, and community opportunities. Stay connected to what's happening in Huntsville without missing anything important.</p>
-            </div>
-
-            <div class="feature">
-                <h4>Support Local</h4>
-                <p>Connect with local businesses, organizations, and community spaces that help strengthen Huntsville. Discover ways to contribute to the city's economy and culture.</p>
-            </div>
-
-            <div class="feature">
-                <h4>Plan Your Visit</h4>
-                <p>Use trusted recommendations to plan outings, family activities, and trips in Huntsville. Find practical guidance to make the most of your time in the city.</p>
-            </div>
-
-            <!-- Duplicate cards for smooth loop -->
-            <div class="feature">
-                <h4>Explore Resources</h4>
-                <p>Browse curated food, wellness, entertainment, and family-friendly resources across Huntsville. These listings help residents and visitors quickly find services that are practical and easy to access.</p>
-            </div>
-
-            <div class="feature">
-                <h4>Discover Huntsville</h4>
-                <p>Explore local landmarks, attractions, and hidden gems that make Huntsville unique. Whether you're new or have lived here for years, discover places worth visiting.</p>
-            </div>
-
-            <div class="feature">
-                <h4>Community Powered</h4>
-                <p>Resources are contributed by residents and carefully reviewed for accuracy. This collaborative approach ensures the hub reflects reliable local knowledge.</p>
-            </div>
-
-            <div class="feature">
-                <h4>Stay Informed</h4>
-                <p>Access up-to-date information on services, events, and community opportunities. Stay connected to what's happening in Huntsville without missing anything important.</p>
-            </div>
-
-            <div class="feature">
-                <h4>Support Local</h4>
-                <p>Connect with local businesses, organizations, and community spaces that help strengthen Huntsville. Discover ways to contribute to the city's economy and culture.</p>
-            </div>
-
-            <div class="feature">
-                <h4>Plan Your Visit</h4>
-                <p>Use trusted recommendations to plan outings, family activities, and trips in Huntsville. Find practical guidance to make the most of your time in the city.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FORM PAGE -->
-<section class="page formPage">
-    <h3>Add a Resource</h3>
-    <p>If we missed a resource, submit it below for review.</p>
-
-    <form>
-        <label>Resource Name</label>
-        <input type="text" required>
-
-        <label>Website</label>
-        <input type="url" placeholder="https://example.org" required>
-
-        <label>Resource Type</label>
-        <select required>
-            <option value="">Choose a resource type</option>
-            <option>Food</option>
-            <option>Attraction</option>
-            <option>Family</option>
-            <option>Entertainment</option>
-            <option>Wellness</option>
-        </select>
-
-        <label>Description</label>
-        <textarea required></textarea>
-
-        <label>Tags</label>
-        <input type="text" placeholder="affordable, family-friendly">
-
-        <button type="submit">Submit Resource</button>
-    </form>
-</section>
-
-<!-- TSA LOGO -->
-<div class="TSALogoDiv">
-    <a href="https://tsaweb.org">
-        <img src="https://tsaweb.org/ResourcePackages/Bootstrap5/assets/dist/img/TSA_logo.png" alt="TSA Logo">
-    </a>
-</div>
-
+    <script src="script.js"></script>
 </body>
 </html>
