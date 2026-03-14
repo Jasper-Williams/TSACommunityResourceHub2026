@@ -1,4 +1,4 @@
-/* -------------------- RESET & GLOBAL -------------------- */
+/* -------------------- Global -------------------- */
 html, body {
     height: 100%;
     margin: 0;
@@ -21,7 +21,7 @@ body {
     scroll-snap-type: y mandatory;
 }
 
-/* -------------------- PAGE SYSTEM -------------------- */
+/* -------------------- Page System -------------------- */
 .page {
     height: calc(100vh - 80px);
     width: 100%;
@@ -38,7 +38,7 @@ body {
 
 
 
-/* -------------------- HEADER PAGE -------------------- */
+/* -------------------- Header Page -------------------- */
 .header {
     background-color: #519ADE;
     color: white;
@@ -112,7 +112,7 @@ body {
 }
 
 
-/* -------------------- NAVIGATION -------------------- */
+/* -------------------- Navigation Bar -------------------- */
 .dropdownDiv {
     position: fixed;
     top: 0;
@@ -251,7 +251,7 @@ body {
 }
 
 
-/* -------------------- CAROUSEL PAGE -------------------- */
+/* -------------------- Animated Page -------------------- */
 
 .carouselPage{
     background-color: #0A2540;
@@ -267,10 +267,15 @@ body {
 .feature {
     margin-right: 30px;
 }
+.feature:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 
 .featureDivs:hover {
     animation-play-state: paused;
 }
+
 
 .feature {
     min-width: 250px; 
@@ -316,7 +321,7 @@ body {
 }
 
 
-/* -------------------- DIRECTORY PAGE --------------- */
+/* -------------------- Resource Directory Page --------------- */
 .resourcePage {
     background-color: #E6EEF6;
     padding: 40px 20px;
@@ -345,7 +350,7 @@ hr.black {
     margin-bottom: 30px;
 }
 
-/* Search input styling */
+
 .searchContainer {
     text-align: center;
     margin-bottom: 20px;
@@ -368,7 +373,6 @@ hr.black {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Directory container */
 .resourceDirectoryDiv {
     max-height: 350px;
     overflow-y: auto;
@@ -381,7 +385,6 @@ hr.black {
     gap: 10px;
 }
 
-/* Individual items */
 .resourceDirectoryDiv .list-item {
     padding: 10px;
     border-bottom: 1px solid #eee;
@@ -412,7 +415,7 @@ hr.black {
     color: #555;
 }
 
-/* Scrollbar styling for better appearance */
+/*------------------- Scrollbar styling for better appearance-------------- */
 .resourceDirectoryDiv::-webkit-scrollbar {
     width: 8px;
 }
@@ -431,7 +434,7 @@ hr.black {
     background: #999;
 }
 
-/* -------------------- FORM PAGE -------------------- */
+/* -------------------- Form Page -------------------- */
 .formPage {
     background-color: #F8FAFC;
     color: black;
@@ -476,7 +479,7 @@ button:hover {
     background-color: #1f55c9;
 }
 
-/* -------------------- RESOURCE DIV (universal for Food, Family, etc.) -------------------- */
+/* ----------------- Resource Div(Universal Throughout) ---------------- */
 .resourceDiv {
     width: 90%;
     max-width: 800px;
@@ -501,7 +504,6 @@ button:hover {
     margin-bottom: 20px;
 }
 
-/* universal list items inside resourceDiv */
 .resourceDiv .list-item {
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
@@ -518,16 +520,7 @@ button:hover {
     text-decoration: underline;
 }
 
-
-/* -------------------- TSA LOGO -------------------- */
-.TSALogoDiv {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    opacity: 0.85;
-}
-
-/* -------------------- LINKS -------------------- */
+/* -------------------- Links -------------------- */
 a {
     color: white;
     text-decoration: none;
@@ -535,9 +528,52 @@ a {
 
 .resourceLinkColor{
     color: #0A2540;
+    
+}
+.resourceLinkColor:hover{
+    color:#519ADE;
+    text-decoration: underline;
+ 
 }
 
-/*---------------------RANDOM ELEMENTS----------------*/
+/*--------------------- About Us ----------------*/
+.container {
+  display: flex;
+  height: 22.5vh;
+}
+
+.leftPanel {
+  width: 50%;
+  background: #f0f0f0;
+  border: 1px solid black;
+  align-items: center;
+  text-align: center; 
+  background-color: #0A2540;
+  color: white;
+  border-radius: 25px;
+  margin: 25px;
+}
+
+.rightPanel {
+  width: 50%;
+  background: #ffffff;
+  border: 1px solid black;
+  align-items: center;
+  text-align: center;
+  background-color: #0A2540;
+  color: white;
+  border-radius: 25px;
+  margin: 25px;
+}
+.rightText{
+    margin: 30px;
+}
+
+.leftText{
+    margin: 30px;
+}
+
+/*--------------------- Random Elements ----------------*/
 button {
     background-color: #519ADE;
 }
@@ -545,4 +581,6 @@ button {
 button:hover {
     background-color: #245BBF;
 }
+
+
 
