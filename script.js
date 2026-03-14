@@ -58,7 +58,7 @@ if (form) {
             alert("Something went wrong. Please try again.");
         });
     };
-}''
+}
 
 
 const navLinks = document.querySelectorAll(".nav-link, .nav-page");
