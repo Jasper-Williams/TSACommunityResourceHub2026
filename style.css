@@ -311,6 +311,13 @@ body {
     align-items: center;
 }
 
+
+#spotlightHeader{
+    text-decoration:underline;
+}
+
+
+
 @keyframes scrollCarousel {
     from {
         transform: translateX(0);
@@ -539,7 +546,8 @@ a {
 /*--------------------- About Us ----------------*/
 .container {
   display: flex;
-  height: 22.5vh;
+  min-height: 22.5vh;
+  height: auto;
 }
 
 .leftPanel {
@@ -552,6 +560,11 @@ a {
   color: white;
   border-radius: 25px;
   margin: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 .rightPanel {
@@ -571,6 +584,11 @@ a {
 
 .leftText{
     margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 /*--------------------- Random Elements ----------------*/
@@ -582,5 +600,34 @@ button:hover {
     background-color: #245BBF;
 }
 
+
+.logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    width: 250px;
+    height: auto;
+    opacity: 0.7;
+}
+
+.navBarLogo{
+    width: 75px;
+    height: auto;
+    z-index:999;
+    
+}
+
+.profileImg{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid black;
+    display: block;
+    margin: 0 auto 8px;
+}
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
