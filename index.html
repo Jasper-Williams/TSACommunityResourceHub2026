@@ -5,6 +5,7 @@
     <title>Huntsville Community Resource Hub</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <!---FAVICON IMAGE-->
@@ -605,30 +606,31 @@
     <section class="page formPage" id="addResource">
         <h3>Add a Resource</h3>
         <p>If we missed a resource, submit it below for review.</p>
-
-        <form>
+        <form id="resourceForm">
             <label>Resource Name</label>
-            <input type="text" required>
-
+            <input type="text" id="resName" required>
+    
             <label>Website</label>
-            <input type="url" placeholder="https://example.org" required>
-
+            <input type="url" id="resURL" placeholder="https://example.org" required>
+    
             <label>Resource Type</label>
-            <select required>
+            <select id="resCategory" required>
                 <option value="">Choose a resource type</option>
                 <option>Food</option>
                 <option>Attraction</option>
                 <option>Family</option>
                 <option>Entertainment</option>
                 <option>Wellness</option>
+                <option>Non-Profit</option>
+                <option>Organization</option>
             </select>
-
+    
             <label>Description</label>
-            <textarea required></textarea>
-
+            <textarea id="resDesc" required></textarea>
+    
             <label>Tags</label>
-            <input type="text" placeholder="affordable, family-friendly">
-
+            <input type="text" id="resTags" placeholder="affordable, family-friendly">
+    
             <button type="submit">Submit Resource</button>
         </form>
     </section>
