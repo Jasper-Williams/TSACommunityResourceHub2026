@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!---FAVICON IMAGE-->
+<link rel="icon" href="https://codehs.com/uploads/26a6cc26700e1c9b03c592b570a3e915" type="image/x-icon">
+</head>
+
+<body>
+     <!-- NAVBAR -->
+    <div class="dropdownDiv">
+        <a href="index.html" class = "nav-link">
+            <button class="dropbtn">Home Page</button>
+        </a>
+        
+        <div class="dropdown">
+            <button class="dropbtn" id = "borderBtn">Explore more</button>
+
+            <div class="dropdown-content">
+                <a href="AboutUs.html">About us</a>
+                <a href="Events.html">Event Calendar</a>
+                <a href="References.html">References Page</a>
+            </div>
+        </div>
+
+    </div>
+    <!-- HEADER PAGE -->
+    <section class="page header" id="topSection">
+        <h1 id="bigHeader">Huntsville Community Resource Hub</h1>
+        <hr>
+        <p class="insideP">
+            A Community Resource Hub that offers a searchable resource directory highlighting food, wellness, entertainment,
+                family-friendly, and support resources across Huntsville, Alabama.
+        </p>
+    </section>
+    <h1 id="event-header">2026 Community Events Calendar</h1>
+    <hr id="event-hr">
+    <p id="event-p">An interactive calendar that shows the events going on in Huntsville year-round.</p>
+        
+    <div class="calendarContainer">
+        <div class="calendar">
+
+ <!--january-->
+  <div class="month">
+    <h3>January 2026</h3>
+    <div class="grid">
+      <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+      <div></div><div></div><div></div><div></div>
+      <div class="event" title="New Year's Day Fun Runs at John Hunt Cross Country Park">1 <a href="https://www.huntsvilleal.gov" target="_blank">New Year's Day Fun Runs at John Hunt Cross Country Park</a></div>
+      <div>2</div><div>3</div><div>4</div><div>5</div>
+      <div class="event" title="Rally Day at Jaycee Community Building">6 <a href="https://www.huntsvilleal.gov" target="_blank">Rally Day at Jaycee Community Building</a></div>
+      <div class="event" title="Voices of Hope and Power Concert at Cavalry Hill Community Center">7 <a href="https://www.huntsvilleal.gov" target="_blank">Voices of Hope and Power Concert at Cavalry Hill Community Center</a></div>
+      <div>8</div><div>9</div>
+      <div class="event" title="Rocket City Horror Con">10 <a href="https://www.rockethorrorcon.com" target="_blank">Rocket City Horror Con</a></div>
+      <div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div>
+      <div class="event" title="MLK Jr. Celebration Parade">17 <a href="https://www.huntsvilleal.gov/mlkparade" target="_blank">MLK Jr. Celebration Parade</a></div>
+      <div>18</div><div>19</div><div>20</div><div>21</div><div>22</div><div>23</div>
+      <div>24</div><div>25</div><div>26</div><div>27</div><div>28</div><div>29</div><div>30</div>
+      <div class="event" title="HBCU College Fair">31 <a href="https://www.huntsvilleal.gov" target="_blank">HBCU College Fair</a></div>
+    </div>
+  </div>
+
+  <!--february-->
+  <div class="month">
+    <h3>February 2026</h3>
+    <div class="grid">
+      <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+      <div></div><div></div><div></div><div></div><div></div><div>1</div><div class="event" title="Ground Dog Day at Huntsville City Hall">2 <a href="https://www.huntsvilleal.gov" target="_blank">Ground Dog Day at Huntsville City Hall</a></div>
+      <div class="event" title="Mardi Gras at MidCity (Feb 3–17)">3 <a href="https://www.huntsville.org" target="_blank">Mardi Gras at MidCity (Feb 3–17)</a></div>
+      <div>4</div><div>5</div>
+      <div class="event" title="A Winter Affair">6 <a href="https://www.huntsville.org" target="_blank">A Winter Affair</a></div>
+      <div class="event" title="Rocket City Weather Fest at UAH">7 <a href="https://www.huntsville.org" target="_blank">Rocket City Weather Fest at UAH</a></div>
+      <div>8</div><div>9</div><div>10</div><div>11</div><div>12</div>
+      <div class="event" title="Love Beyond The Grave Tours at Maple Hill Cemetery">13 <a href="https://www.huntsville.org" target="_blank">Love Beyond The Grave Tours at Maple Hill Cemetery</a></div>
+      <div class="event" title="Forces of Cyber Gala at USSRC Davidson Center">14 <a href="https://www.huntsville.org" target="_blank">Forces of Cyber Gala at USSRC Davidson Center</a></div>
+      <div class="event" title="Chinese New Year Celebration at Calhoun Community College">15 <a href="https://www.huntsville.org" target="_blank">Chinese New Year Celebration at Calhoun Community College</a></div>
+      <div>16</div><div>17</div><div>18</div><div>19</div><div class="event" title="Arbor Day Celebration">20 <a href="https://www.huntsville.org" target="_blank">Arbor Day Celebration</a></div>
+      <div class="event" title="African American Art Festival at Dr. Robert Shurney Legacy Center">21 <a href="https://www.huntsville.org" target="_blank">African American Art Festival at Dr. Robert Shurney Legacy Center</a></div>
+      <div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div><div>28</div>
+    </div>
+  </div>
+
+  <!--march-->
+  <div class="month">
+    <h3>March 2026</h3>
+    <div class="grid">
+      <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+      <div></div><div></div><div></div><div></div><div></div><div></div><div class="event" title="14th Annual Community Kite Festival at John Hunt Park">1 <a href="https://www.huntsville.org" target="_blank">14th Annual Community Kite Festival at John Hunt Park</a></div>
+      <div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+      <div class="event" title="Conference USA Basketball Championships at VBC Propst Arena">7 <a href="https://www.huntsville.org" target="_blank">Conference USA Basketball Championships at VBC Propst Arena</a></div>
+      <div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div>
+      <div class="event" title="Downtown Rescue Mission GLOW Run 5K">14 <a href="https://www.huntsville.org" target="_blank">Downtown Rescue Mission GLOW Run 5K</a></div>
+      <div>15</div><div>16</div><div>17</div><div>18</div><div>19</div>
+      <div class="event" title="Huntsville Music Office Quarterly Meetup at Tip Top Cafe">20 <a href="https://www.huntsville.org" target="_blank">Huntsville Music Office Quarterly Meetup at Tip Top Cafe</a></div>
+      <div>21</div><div>22</div><div>23</div>
+      <div class="event" title="Taste of Soul Family Festival at The Orion Amphitheater">28 <a href="https://www.huntsville.org" target="_blank">Taste of Soul Family Festival at The Orion Amphitheater</a></div>
+    </div>
+  </div>
+  
+  <!--april-->
+<div class="month">
+    <h3>April 2026</h3>
+    <div class="grid">
+      <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+      <div></div><div></div><div></div><div>1</div><div>2</div><div>3</div><div>4</div>
+      <div class="event" title="Easter Jubilee at Burritt on the Mountain">4 <a href="https://www.burrittonthemountain.com" target="_blank">Easter Jubilee at Burritt on the Mountain</a></div>
+      <div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div>
+      <div class="event" title="District Community Cleanup Day at Richard Showers, Jr., Recreation Center">11 <a href="https://www.huntsvilleal.gov" target="_blank">District Community Cleanup Day at Richard Showers, Jr., Recreation Center</a></div>
+      <div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div class="event" title="Multiple events on April 18th">18<ul> <li><a href="https://www.burrittonthemountain.com" target="_blank">Spring Farm Day at Burritt on the Mountain</a></li> <li><a href="https://www.haysnaturepreserve.org" target="_blank">Earth Day at Hays Nature Preserve</a></li> <li><a href="https://www.hsvchamber.org" target="_blank">8th Annual Book Ball hosted by Huntsville/Madison County Chamber</a></li> </ul>
+      </div>
+      <div>19</div><div>20</div><div>21</div><div>22</div><div>23</div><div>24</div>
+      <div class="event" title="Panoply Arts Festival at Big Spring Park">24 <a href="https://www.panoplyfestival.org" target="_blank">Panoply Arts Festival at Big Spring Park</a></div>
+      <div>25</div><div>26</div><div>27</div><div>28</div>
+      <div class="event" title="Huntsville Expo & Tech Forum at Jackson Center">28 <a href="https://www.smta.org" target="_blank">Huntsville Expo & Tech Forum at Jackson Center</a></div>
+      <div>29</div><div>30</div>
+    </div>
+  </div>
+
+  <!--may-->
+  <div class="month">
+    <h3>May 2026</h3>
+    <div class="grid">
+      <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+      <div></div><div></div><div></div><div></div><div></div><div>1</div><div>2</div>
+      <div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div>
+      <div class="event" title="Huntsville Classic at The Orion Amphitheater">9 <a href="https://www.theorionamphitheater.com" target="_blank">Huntsville Classic at The Orion Amphitheater</a></div>
+      <div>10</div><div>11</div>
+      <div class="event" title="NAVIGATE Nonprofit Network Conference at Von Braun Center Saturn Ballroom">12 <a href="https://www.vonbrauncenter.com" target="_blank">NAVIGATE Nonprofit Network Conference at Von Braun Center Saturn Ballroom</a></div>
+      <div>13</div><div>14</div><div>15</div>
+      <div class="event" title="Caribbean Qarnival Mental Health 5K & Fair at Big Spring Park">16 <a href="https://www.bigspringpark.org" target="_blank">Caribbean Qarnival Mental Health 5K & Fair at Big Spring Park</a></div>
+      <div>17</div><div>18</div><div>19</div>
+      <div class="event" title="Wheels of Remembrance Car Show at Wicks Family Field">23 <a href="https://www.huntsvilleal.gov" target="_blank">heels of Remembrance Car Show at Wicks Family Field</a></div>
+      <div>24</div><div>25</div><div>26</div><div>27</div><div>28</div>
+      <div class="event" title="City Lights & Stars: Eric Essix at Burritt on the Mountain">29 <a href="https://www.burrittonthemountain.com" target="_blank">City Lights & Stars: Eric Essix at Burritt on the Mountain</a></div>
+      <div>30</div><div>31</div>
+    </div>
+  </div>
+
+  <!--june-->
+  <div class="month">
+    <h3>June 2026</h3>
+    <div class="grid">
+      <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+      <div></div><div></div><div></div><div></div><div></div><div></div><div>1</div>
+      <div class="event" title="Burritt on the Mountain Nature Camp June 1–5">1 <a href="https://www.burrittonthemountain.com" target="_blank">Burritt on the Mountain Nature Camp June 1–5</a></div>
+      <div>2</div><div>3</div><div>4</div><div>5</div>
+      <div>6</div><div>7</div>
+      <div class="event" title="HudsonAlpha GTAC: Cells Event">8 <a href="https://www.hudsonalpha.org" target="_blank">HudsonAlpha GTAC: Cells Event</a></div>
+      <div>9</div><div>10</div><div>11</div><div>12</div>
+      <div class="event" title="MidCity 5K">13 <a href="https://www.huntsville.org" target="_blank">MidCity 5K</a></div>
+      <div>14</div><div>15</div><div>16</div>
+      <div class="event" title="Rocket City Pride Festival June 17–18">17 <a href="https://www.campus805.com" target="_blank">Rocket City Pride Festival</a></div>
+      <div class="event" title="Rocket City Pride Festival June 17–18">18 <a href="https://www.campus805.com" target="_blank">Rocket City Pride Festival</a></div>
+      <div>19</div>
+      <div class="event" title="Annual Juneteenth Festival at Big Spring Park">20 <a href="https://www.huntsville.org" target="_blank">Annual Juneteenth Festival at Big Spring Park</a></div>
+      <div>21</div>
+      <div class="event" title="HudsonAlpha GTAC: Unity & Diversity Event">22 <a href="https://www.hudsonalpha.org" target="_blank">HudsonAlpha GTAC: Unity & Diversity Event</a></div>
+      <div>23</div><div>24</div><div>25</div><div>26</div><div>27</div><div>28</div>
+      <div>29</div><div>30</div>
+    </div>
+  </div>
+
+  <!--july-->
+  <div class="month">
+    <h3>July 2026</h3>
+    <div class="grid">
+      <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+      <div></div><div></div><div></div><div>1</div><div>2</div><div>3</div>
+      <div class="event" title="Tie-Dye in July at Big Spring Park">3 <a href="https://www.huntsville.org" target="_blank">Tie-Dye in July at Big Spring Park</a></div>
+      <div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div>
+      <div class="event" title="Splish Splash Bash at Brahan Spring Park">9 <a href="https://www.huntsville.org" target="_blank">Splish Splash Bash at Brahan Spring Park</a></div>
+      <div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div>
+      <div class="event" title="Rec and Read">16 <a href="https://www.huntsville.org" target="_blank">Rec and Read</a></div>
+      <div>17</div><div>18</div><div>19</div><div>20</div><div>21</div><div>22</div><div>23</div>
+      <div>24</div>
+      <div class="event" title="Light Up the Night at Big Spring Park">25 <a href="https://www.huntsville.org" target="_blank">Light Up the Night at Big Spring Park</a></div>
+      <div>26</div><div>27</div><div>28</div><div>29</div><div>30</div><div>31</div>
+    </div>
+  </div>
+
+  <!--august-->
+  <div class="month">
+    <h3>August 2026</h3>
+    <div class="grid">
+      <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+      <div></div><div></div><div></div><div></div><div></div><div></div><div>1</div>
+      <div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div>
+      <div class="event" title="Huntsville Restaurant Week (Aug 8–17)">8 <a href="https://www.rocketcitydish.com" target="_blank">Huntsville Restaurant Week (Aug 8–17)</a></div>
+      <div>9</div><div>10</div>
+      <div class="event" title="Uncorked at the Garden, Huntsville Botanical Garden">11 <a href="https://www.hsvbg.org" target="_blank">Uncorked at the Garden, Huntsville Botanical Garden</a></div>
+      <div class="event" title="Movies in the Park, Big Spring Park">12 <a href="https://www.huntsville.org" target="_blank">Movies in the Park, Big Spring Park</a></div>
+      <div class="event" title="Grotto Lights Concert & Picnic">13 <a href="https://www.huntsville.org" target="_blank">Grotto Lights Concert & Picnic</a></div>
+      <div>14</div><div>15</div><div>16</div><div>17</div>
+      <div>18</div><div>19</div><div>20</div><div>21</div><div>22</div><div>23</div>
+      <div>24</div><div>25</div><div>26</div><div>27</div><div>28</div>
+      <div class="event" title="Tipper & Friends Live Music Event at The Orion Amphitheater">29 <a href="https://www.theorionamphitheater.com" target="_blank">Tipper & Friends Live Music Event at The Orion Amphitheater</a></div>
+      <div class="event" title="VBC 5K Music Run">30 <a href="https://www.vonbrauncenter.com" target="_blank">VBC 5K Music Run</a></div>
+      <div>31</div>
+    </div>
+  </div>
+
+  <!--september-->
+  <div class="month">
+    <h3>September 2026</h3>
+    <div class="grid">
+      <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+      <div></div><div></div><div></div><div>1</div><div>2</div><div>3</div><div>4</div>
+      <div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div>
+      <div>12</div><div class="event" title="Women in Music Week (part of Huntsville Music Month)">12 <a href="https://www.huntsville.org" target="_blank">Women in Music Week (part of Huntsville Music Month)</a></div>
+      <div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div>
+      <div class="event" title="Free Day of Dance at The Orion Amphitheater">19 <a href="https://www.theorionamphitheater.com" target="_blank">Free Day of Dance at The Orion Amphitheater</a></div>
+      <div class="event" title="National Cleanup Day at Hillendale Park">20 <a href="https://www.huntsville.org" target="_blank">National Cleanup Day at Hillendale Park</a></div>
+      <div class="event" title="CulturA Festival at The Orion Amphitheater">21 <a href="https://www.theorionamphitheater.com" target="_blank">CulturA Festival at The Orion Amphitheater</a></div>
+      <div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div><div>28</div>
+      <div>29</div><div>30</div>
+    </div>
+  </div>
+
+  <!--october-->
+  <div class="month">
+    <h3>October 2026</h3>
+    <div class="grid">
+      <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+      <div></div><div></div><div></div><div></div><div></div><div>1</div><div>2</div>
+      <div>3</div><div class="event" title="Fall for All at Big Spring Park">4 <a href="https://www.huntsville.org" target="_blank">Fall for All at Big Spring Park</a></div>
+      <div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div>
+      <div>11</div><div>12</div><div>13</div><div>14</div><div class="event" title="Maple Hill Cemetery Stroll">15 <a href="https://www.maplehillcemetery.org" target="_blank">Maple Hill Cemetery Stroll</a></div>
+      <div>16</div><div>17</div><div>18</div>
+      <div class="event" title="42nd Annual Taste of Huntsville">19 <a href="https://www.wearehuntsville.com" target="_blank">42nd Annual Taste of Huntsville</a></div>
+      <div>20</div><div>21</div><div>22</div><div>23</div><div>24</div>
+      <div class="event" title="Madison Street Festival">25 <a href="https://www.huntsville.org" target="_blank">Madison Street Festival</a></div>
+      <div>26</div><div>27</div><div>28</div><div>29</div><div>30</div><div>31</div>
+    </div>
+  </div>
+
+  <!--november-->
+  <div class="month">
+    <h3>November 2026</h3>
+    <div class="grid">
+      <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+      <div></div><div></div><div>1</div><div class="event" title="Mayor's Tree Planting Day at Brahan Spring Park">1 <a href="https://www.huntsville.org" target="_blank">Mayor's Tree Planting Day at Brahan Spring Park</a></div>
+      <div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div>
+      <div class="event" title="The Market at MidCity">9 <a href="https://www.midcityhsv.com" target="_blank">The Market at MidCity</a></div><div class="event" title="Toys for Totz">10 <a href="https://huntsville-al.toysfortots.org/local-coordinator-sites/lco-sites/default.aspx?nPageID=0&nPreviewInd=0&nRedirectInd=3" target="_blank">Toys for Totz Registration (Nov 10-15)</a></div>
+     <div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div>
+      <div>17</div><div>18</div><div>19</div><div>20</div><div>21</div><div>22</div><div>23</div>
+      <div>24</div><div>25</div><div class="event" title="Tinsel Trail Opens at Big Spring Park">25 <a href="https://www.huntsville.org" target="_blank">Tinsel Trail Opens at Big Spring Park</a></div>
+      <div>26</div><div>27</div><div>28</div><div>29</div><div>30</div>
+    </div>
+  </div>
+
+  <!--december-->
+  <div class="month">
+    <h3>December 2026</h3>
+    <div class="grid">
+      <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+      <div></div><div></div><div>1</div>
+      <div class="event" title="Skating in the Park behind Huntsville Museum of Art">1 <a href="https://www.huntsville.org" target="_blank">Skating in the Park behind Huntsville Museum of Art</a></div>
+      <div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div>
+      <div>9</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div>
+      <div>16</div><div>17</div><div>18</div>
+      <div class="event" title="Big Spring Jingle, City of Huntsville Recreation Events">19 <a href="https://www.huntsville.org" target="_blank">Big Spring Jingle, City of Huntsville Recreation Events</a></div>
+      <div>20</div><div>21</div><div>22</div><div>23</div><div class="event" title="Miracle at MidCity">24 <a href="https://www.thecampmidcity.com" target="_blank">Miracle at MidCity</a></div>
+      <div>25</div><div>26</div><div>27</div><div>28</div><div>29</div><div>30</div><div>31</div>
+    </div>
+  </div>
+
+        </div> <!-- closes .calendar -->
+    </div> <!-- closes .calendarContainer -->
+
+<!-- Logo -->
+    <a href = "index.html"><img  class="logo" src="https://codehs.com/uploads/64c7c146301bd208d7d57b5e324fd86f" alt="LogoForPage"></a>
+
+</body>
+</html>
